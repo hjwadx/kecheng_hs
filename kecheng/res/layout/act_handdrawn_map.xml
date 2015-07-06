@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kecheng="http://schemas.android.com/apk/res/fm.jihua.kecheng_hs"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background" >
+
+    <ImageView
+        android:id="@+id/handmap_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/handmap_other_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/handmap_download_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_bg_with_shadow"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <fm.jihua.kecheng.ui.widget.CachedImageView
+                        android:id="@+id/handmap_imgthumb"
+                        android:layout_width="114dp"
+                        android:layout_height="119dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/handmap_preview" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/handmap_text_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="课程格子手绘地图"
+                            android:textColor="@color/textcolor_80"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/handmap_text_school"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/textcolor_4c"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/handmap_text_mapsize"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/textcolor_b2"
+                            android:textSize="13sp" />
+
+                        <ProgressBar
+                            android:id="@+id/handmap_progressBar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/handmap_text_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="建议在WIFI环境下下载"
+                            android:textColor="@color/textcolor_b2"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <fm.jihua.kecheng.ui.widget.ShadowTextView
+                    android:id="@+id/btn_download"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    kecheng:shadowParentId="@+id/btn_download_child"
+                    kecheng:drawableHeight="@dimen/home_menu_item_icon_size"
+                    kecheng:drawableWidth="@dimen/home_menu_item_icon_size"
+                    kecheng:text="下载" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/handmap_apply_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                 >
+
+                <FrameLayout
+                    android:layout_width="170dp"
+                    android:layout_height="201dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/bias_hintview_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/handmap_alert_bg" />
+
+                    <fm.jihua.kecheng.ui.view.BiasTextView
+                        android:id="@+id/bias_hintview_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="80dp"
+                        android:gravity="center"
+                        android:paddingTop="15dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/empty_handmap_apply_for_new"
+                        android:textColor="@color/textcolor_80"
+                        android:textSize="15sp" />
+                </FrameLayout>
+
+                <fm.jihua.kecheng.ui.widget.ShadowTextView
+                    android:id="@+id/btn_applyfor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    kecheng:shadowParentId="@+id/btn_applyfor_child"
+                    kecheng:drawableHeight="@dimen/home_menu_item_icon_size"
+                    kecheng:drawableWidth="@dimen/home_menu_item_icon_size"
+                    kecheng:text="@string/empty_handmap_apply_for_btn" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

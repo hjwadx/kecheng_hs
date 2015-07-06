@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@drawable/title_btn">
+		<ImageButton android:src="@drawable/close_btn_src_normal" android:background="@drawable/close_btn_bg"
+			android:layout_height="wrap_content" android:id="@+id/imageButton1"
+			android:layout_width="wrap_content" />
+	
+	</RelativeLayout>
+	<WebView android:id="@+id/webView1" android:layout_width="match_parent"
+		android:layout_height="match_parent"></WebView>
+</LinearLayout>

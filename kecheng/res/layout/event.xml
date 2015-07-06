@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cachedimage="http://schemas.android.com/apk/res/fm.jihua.kecheng_hs"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/app_background">
+    
+    <ScrollView
+        android:id="@+id/main_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginBottom="-4dp"
+        android:background="@color/app_background"
+        android:fadingEdge="none" >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_bg_with_shadow"
+                android:layout_margin="8dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:textColor="@color/main_blue"
+                    android:textSize="28sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <fm.jihua.kecheng.ui.widget.CachedImageView
+                        android:id="@+id/poster"
+                        android:layout_width="80dp"
+                        android:layout_height="106dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="12dp"
+                        android:src="@drawable/activity_pic_default_poster" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/textcolor_80"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/locale"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:textColor="@color/textcolor_80"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/initiator"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:textColor="@color/textcolor_80"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_margin="16dp"
+                    android:background="@color/divider_bg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="共同参加"
+                    android:textColor="@color/textcolor_4c"
+                    android:textSize="16sp" />
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                    <fm.jihua.kecheng.ui.widget.CachedImageView
+                        android:id="@+id/participant0"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        cachedimage:isSquare="true"
+                        android:background="@color/black_alpha_07"
+                        android:onClick="onClick"/>
+                    <fm.jihua.kecheng.ui.widget.CachedImageView
+                        android:id="@+id/participant1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        cachedimage:isSquare="true"
+                        android:background="@color/black_alpha_12" 
+                        android:onClick="onClick"/>
+                    <fm.jihua.kecheng.ui.widget.CachedImageView
+                        android:id="@+id/participant2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        cachedimage:isSquare="true"
+                        android:background="@color/black_alpha_07"
+                        android:onClick="onClick"/>
+                    <fm.jihua.kecheng.ui.widget.CachedImageView
+                        android:id="@+id/participant3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        cachedimage:isSquare="true"
+                        android:background="@color/black_alpha_12"
+                        android:onClick="onClick"/>
+                    <fm.jihua.kecheng.ui.widget.CachedImageView
+                        android:id="@+id/participant_more"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:padding="15dp"
+                        cachedimage:isSquare="true"
+                        android:src="@drawable/activity_icon_all_friends"
+                        android:background="@color/main_blue"
+                        android:onClick="onClick"/>
+                </LinearLayout>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="-4dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/white_bg_with_shadow"
+                android:orientation="vertical" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp"
+                    android:text="活动简介"
+                    android:textColor="@color/textcolor_4c"
+                    android:textSize="16sp" />
+                <TextView 
+                    android:id="@+id/introduction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="12dp"
+                    android:textColor="@color/textcolor_80"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_delete_event_parent"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:paddingTop="2dp"
+                android:paddingRight="2dp"
+                android:paddingLeft="2dp"
+                android:paddingBottom="4dp"
+                android:background="@drawable/white_bg_with_shadow" >
+
+                <LinearLayout
+                    android:id="@+id/btn_delete_event"
+                    android:layout_width="fill_parent"
+                    android:layout_height="44dp"
+                    android:background="@color/red_selector_linearlayout_bg"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/activity_icon_cancel" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="4dp"
+                        android:text="取消参加"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_overdue_event_parent"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:paddingTop="2dp"
+                android:paddingRight="2dp"
+                android:paddingLeft="2dp"
+                android:paddingBottom="4dp"
+                android:background="@drawable/white_bg_with_shadow" >
+
+                <LinearLayout
+                    android:id="@+id/btn_delete_event"
+                    android:layout_width="fill_parent"
+                    android:layout_height="44dp"
+                    android:background="@color/textcolor_b2"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="4dp"
+                        android:text="已 过 期"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+            
+        </LinearLayout>
+
+    </ScrollView>
+    
+    <ViewStub
+        android:id="@+id/view_stub_add_event"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:layout="@layout/button_add_event"/>
+</LinearLayout>

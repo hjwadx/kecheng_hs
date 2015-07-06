@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kecheng="http://schemas.android.com/apk/res/fm.jihua.kecheng_hs"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/check_new_version_layout_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/shadow_background"
+            android:visibility="gone" >
+
+            <fm.jihua.kecheng.ui.widget.LinearSettingView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                kecheng:parentId="@+id/check_new_version_parent"
+                kecheng:highLightId="@+id/highlight_update"
+                kecheng:titleName="新版本提醒"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/shadow_background" >
+
+            <fm.jihua.kecheng.ui.widget.LinearSettingView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                kecheng:parentId="@+id/edit_account_parent"
+                kecheng:highLightId="@+id/highlight_password"
+                kecheng:contentId="@+id/edit_account"
+                kecheng:titleName="我的账号"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_bg" />
+
+            <fm.jihua.kecheng.ui.widget.LinearSettingView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                kecheng:parentId="@+id/bind_renren_parent"
+                kecheng:oauthBindId="@+id/bind_renren"
+                kecheng:oauthBindDoneId="@+id/bind_renren_done"
+                kecheng:oauthBindText="点击绑定人人"
+                kecheng:oauthBindDoneText="已绑定"
+                kecheng:titleName="人人"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_bg" />
+
+            <fm.jihua.kecheng.ui.widget.LinearSettingView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                kecheng:parentId="@+id/bind_weibo_parent"
+                kecheng:oauthBindId="@+id/bind_weibo"
+                kecheng:oauthBindDoneId="@+id/bind_weibo_done"
+                kecheng:oauthBindText="点击绑定微博"
+                kecheng:oauthBindDoneText="已绑定"
+                kecheng:titleName="微博"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_bg" />
+
+            <fm.jihua.kecheng.ui.widget.LinearSettingView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                kecheng:parentId="@+id/bind_tencent_parent"
+                kecheng:oauthBindId="@+id/bind_tencent"
+                kecheng:oauthBindDoneId="@+id/bind_tencent_done"
+                kecheng:oauthBindText="点击绑定QQ"
+                kecheng:oauthBindDoneText="已绑定"
+                kecheng:titleName="QQ"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/shadow_background">
+
+            <fm.jihua.kecheng.ui.widget.LinearSettingView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                kecheng:contentId="@+id/semester_name"
+                kecheng:parentId="@+id/semester_name_parent"
+                kecheng:titleName="当前学期"/>
+            
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_bg" />
+            
+            <fm.jihua.kecheng.ui.widget.LinearSettingView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                kecheng:contentId="@+id/time_slot_length"
+                kecheng:parentId="@+id/time_slot_length_parent"
+                kecheng:titleName="每日课程数量"/>
+            
+
+            <!-- 暂时不用了 -->
+            <fm.jihua.kecheng.ui.widget.LinearSettingView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                kecheng:contentId="@+id/week"
+                kecheng:parentId="@+id/week_parent"
+                kecheng:titleName="当前周数"
+                kecheng:visibility="gone"/>
+            
+            <fm.jihua.kecheng.ui.widget.LinearSettingView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                kecheng:contentId="@+id/time_mode"
+                kecheng:parentId="@+id/time_mode_parent"
+                kecheng:titleName="课程时间设置" 
+                kecheng:visibility="gone"/>
+
+            <fm.jihua.kecheng.ui.widget.LinearSettingView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                kecheng:contentId="@+id/background"
+                kecheng:parentId="@+id/background_parent"
+                kecheng:titleName="课表背景"
+                kecheng:visibility="gone" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/shadow_background"
+            android:visibility="gone" >
+
+            <fm.jihua.kecheng.ui.widget.LinearSettingView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                kecheng:titleName="放假模式"
+                kecheng:toggleId="@+id/toggle_vacation" />
+
+            <LinearLayout
+                android:id="@+id/vacation_off"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+                
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/divider_bg" />
+
+                <fm.jihua.kecheng.ui.widget.LinearSettingView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    kecheng:toggleId="@+id/toggle_notification"
+                    kecheng:titleName="每日课程提醒" />
+                
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/divider_bg" />
+
+                <fm.jihua.kecheng.ui.widget.LinearSettingView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    kecheng:contentId="@+id/notification_time"
+                    kecheng:parentId="@+id/notification_time_parent"
+                    kecheng:titleName="每日提醒时间" />
+                
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/divider_bg" />
+
+                <fm.jihua.kecheng.ui.widget.LinearSettingView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    kecheng:toggleId="@+id/toggle_before_class"
+                    kecheng:titleName="课前提醒" />
+                
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/divider_bg" />
+
+                <fm.jihua.kecheng.ui.widget.LinearSettingView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    kecheng:visibility="gone"
+                    kecheng:contentId="@+id/time_mode_before_class_time"
+                    kecheng:parentId="@+id/time_mode_before_class_time_parent"
+                    kecheng:titleName="提醒时间设置" />
+                
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/divider_bg" />
+
+                <fm.jihua.kecheng.ui.widget.LinearSettingView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    kecheng:toggleId="@+id/toggle_class_mute"
+                    kecheng:titleName="上课自动静音" />
+                
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/divider_bg" />
+
+                <fm.jihua.kecheng.ui.widget.LinearSettingView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    kecheng:contentId="@+id/time_mode_class_mute_category"
+                    kecheng:parentId="@+id/time_mode_class_mute_category_parent"
+                    kecheng:titleName="静音类型设置"
+                    kecheng:visibility="gone" />
+                
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/divider_bg" />
+                
+                <fm.jihua.kecheng.ui.widget.LinearSettingView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    kecheng:parentId="@+id/remind_mute_before_class_category_parent"
+                    kecheng:titleName="开启静音是否提醒"
+                    kecheng:toggleId="@+id/toggle_remind_mute_beforeclass"
+                    kecheng:visibility="gone"/>
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vacation_on"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+                
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/divider_bg" />
+
+                <fm.jihua.kecheng.ui.widget.LinearSettingView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    kecheng:contentId="@+id/wake_up_time"
+                    kecheng:parentId="@+id/wake_up_time_parent"
+                    kecheng:titleName="假期结束时间" />
+
+            </LinearLayout>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/shadow_background" >
+
+            <fm.jihua.kecheng.ui.widget.LinearSettingView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                kecheng:parentId="@+id/recommend_parent"
+                kecheng:titleName="推荐应用" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/shadow_background"
+            android:layout_marginBottom="4dp" >
+
+			<fm.jihua.kecheng.ui.widget.LinearSettingView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                kecheng:parentId="@+id/clear_cache_parent"
+                kecheng:titleName="清除缓存" />
+            
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_bg" />
+
+            <fm.jihua.kecheng.ui.widget.LinearSettingView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                kecheng:parentId="@+id/feedback_parent"
+                kecheng:titleName="意见反馈" />
+            
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_bg" />
+
+            <fm.jihua.kecheng.ui.widget.LinearSettingView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                kecheng:parentId="@+id/help_parent"
+                kecheng:titleName="用户帮助" />
+            
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_bg" />
+
+            <fm.jihua.kecheng.ui.widget.LinearSettingView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                kecheng:parentId="@+id/about_parent"
+                kecheng:titleName="关于课程格子" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_shadow"
+            android:orientation="vertical"
+            android:id="@+id/logout_panel"
+            android:visibility="gone"
+            >
+
+            <fm.jihua.kecheng.ui.widget.LinearSettingView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                kecheng:parentId="@+id/logout_parent"
+                kecheng:titleName="注销" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

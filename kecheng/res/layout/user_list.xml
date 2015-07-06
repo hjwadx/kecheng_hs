@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/app_background"
+    android:id="@+id/root">   
+    
+    <ListView
+        android:id="@+id/user_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:listSelector="@android:color/transparent"
+        android:background="@color/app_background"
+        android:dividerHeight="0px"
+        android:fadingEdge="none" >
+    </ListView>
+    <TextView 
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="一条消息也没有……\n一定是你打开的方式不对！"
+        android:paddingBottom="100dp"
+        android:lineSpacingExtra="5dip"
+        android:visibility="gone"/>
+     <fm.jihua.kecheng.ui.view.BiasHintView
+        android:id="@+id/empty_with_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"/>
+</LinearLayout>

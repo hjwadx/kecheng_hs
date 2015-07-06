@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="38dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/course_detail_icon_rate"
+            android:drawablePadding="6dp"
+            android:shadowColor="#FFFFFF"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="课程评价"
+            android:textColor="@color/course_detail_title"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/course_edit_btn"
+            android:shadowColor="#e09a20"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="编辑"
+            android:paddingBottom="2dp"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/course_detail_title_line" />
+
+    <RelativeLayout
+        android:id="@+id/rate_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/rating_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/ratingbar_parent"
+                android:layout_width="fill_parent"
+                android:layout_height="24dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <!-- style="?android:attr/ratingBarStyleSmall" -->
+                <!-- style=”?android:attr/ratingBarStyleIndicator” -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/course_detail_icon_rate_star"
+                    android:drawablePadding="6dp"
+                    android:text="评分"
+                    android:textColor="@color/tag_text_unselected"
+                    android:textSize="14sp" />
+
+                <RatingBar
+                    android:id="@+id/ratingbar"
+                    style="@style/CourseDetailRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:isIndicator="true" />
+
+                <TextView
+                    android:id="@+id/score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text=""
+                    android:textColor="#FFA200"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/ratecount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text=""
+                    android:textColor="@color/course_detail_content"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:drawableLeft="@drawable/course_detail_icon_rate_tag"
+                    android:drawablePadding="6dp"
+                    android:text="标签"
+                    android:textColor="@color/tag_text_unselected"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/tag_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/rating_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="5sp"
+            android:paddingLeft="40dp"
+            android:text="总是老师给你打分？\n童鞋，翻身做主人的时刻到了！"
+            android:textColor="#AAAAAA"
+            android:textSize="15sp" />
+    </RelativeLayout>
+</merge>

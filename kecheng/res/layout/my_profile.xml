@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cachedimage="http://schemas.android.com/apk/res/fm.jihua.kecheng_hs"
+    xmlns:kecheng="http://schemas.android.com/apk/res/fm.jihua.kecheng_hs"
+    android:background="@color/app_background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollprofile"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/app_background"
+        android:fadingEdge="none"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/listGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_background"
+            android:orientation="vertical" >
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/white_bg_with_shadow"
+                android:gravity="bottom"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/cover_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/friendprofile_cover_default"
+                    android:gravity="bottom"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:padding="12dp" >
+
+                        <ImageView
+                            android:id="@+id/edit"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/myprofile_cover_icon_edit"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <fm.jihua.kecheng.ui.widget.CachedImageView
+                        android:id="@+id/myface"
+                        android:layout_width="94dp"
+                        android:layout_height="94dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="30dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/uploadface" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp"
+                        android:background="@color/white_alpha_60"
+                        android:drawableLeft="@drawable/myprofile_cover_icon_tip"
+                        android:drawablePadding="4dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="8dp"
+                        android:text="点击修改或删除照片"
+                        android:textColor="@color/textcolor_66"
+                        android:textSize="10sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <fm.jihua.kecheng.ui.widget.CachedImageView
+                            android:id="@+id/small_avatar0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/white_alpha_50"
+                            cachedimage:isSquare="true" />
+
+                        <fm.jihua.kecheng.ui.widget.CachedImageView
+                            android:id="@+id/small_avatar1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/white_alpha_75"
+                            cachedimage:isSquare="true" />
+
+                        <fm.jihua.kecheng.ui.widget.CachedImageView
+                            android:id="@+id/small_avatar2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/white_alpha_50"
+                            cachedimage:isSquare="true" />
+
+                        <fm.jihua.kecheng.ui.widget.CachedImageView
+                            android:id="@+id/small_avatar3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/white_alpha_75"
+                            cachedimage:isSquare="true" />
+
+                        <fm.jihua.kecheng.ui.widget.CachedImageView
+                            android:id="@+id/small_avatar4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/white_alpha_50"
+                            cachedimage:isSquare="true" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/bg_shadow"
+                android:orientation="vertical" >
+                 
+                <fm.jihua.kecheng.ui.widget.LinearSettingView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    kecheng:contentId="@+id/name"
+                    kecheng:parentId="@+id/name_parent"
+                    kecheng:titleName="姓名" />
+                
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/divider_bg" />
+                
+                <fm.jihua.kecheng.ui.widget.LinearSettingView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    kecheng:contentId="@+id/gender"
+                    kecheng:parentId="@+id/gender_parent"
+                    kecheng:titleName="性别" />
+            </LinearLayout>
+
+            <fm.jihua.kecheng.ui.widget.MyProfileInfoView
+                android:id="@+id/school_information"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+    <fm.jihua.kecheng.ui.widget.CachedImageView
+        android:id="@+id/imageView1"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

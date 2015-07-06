@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@+id/bias_hintview_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/handmap_alert_bg" />
+
+    <fm.jihua.kecheng.ui.view.BiasTextView
+        android:id="@+id/bias_hintview_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bias_hintview_image"
+        android:layout_alignLeft="@+id/bias_hintview_image"
+        android:layout_alignRight="@+id/bias_hintview_image"
+        android:layout_alignTop="@+id/bias_hintview_image"
+        android:layout_marginBottom="120dp"
+        android:gravity="center"
+        android:padding="20dp"
+        android:textColor="@color/textcolor_80"
+        android:textSize="15sp" />
+
+</RelativeLayout>

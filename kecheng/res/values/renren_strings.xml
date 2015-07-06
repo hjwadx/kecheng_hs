@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <!-- renren oauth sdk -->
+    <string name="renren_login_login">Login</string>
+    <string name="renren_login_use_another_account">Login use another account</string>
+    <string name="renren_login_account_chooser_title">Login Renren</string>
+    <string name="renren_cant_detect_network_error">Network is unavailable</string>
+    <string name="renren_network_checked_retry">Try again</string>
+    <string name="renren_network_error_close">Close</string>
+    <string name="renren_network_server_error">Server error,try again later</string>
+    
+    <string name="renren_load_hud_string">Loading</string>
+    
+    
+    <string name="renren_register_tip_str_without_sim">
+    	SMS not available!. Please sms your password to $106900867742$ via your mobile phone, which must 
+    	between 6-20 numbers or letters which case sensitive, eg. we123456. And the phone number will be your username.
+    </string>
+    <string name="renren_register_tip_str_with_sim">
+    	Please sms your password to $106900867742$ via your mobile phone, which must between 6-20 numbers 
+    	or letters which case sensitive, eg. we123456. And the phone number will be your username.
+    </string>
+    <string name="renren_send_reg_sms_cancal_button_title">Close</string>
+    <string name="renren_register_sent_sms_button_title">Send an SMS to</string>
+    <string name="renren_function_sms_not_support">This Device do not support SMS</string>
+    <string name="renren_login_logging">logining...</string>
+    <string name="renren_network_connection_error">Network connection error, please check it.</string>
+</resources>

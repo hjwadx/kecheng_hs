@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fm.jihua.kecheng.ui.widget.LinearSettingView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kecheng="http://schemas.android.com/apk/res/fm.jihua.kecheng_hs"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    kecheng:contentId="@+id/itemview_timemode_time"
+    kecheng:titleId="@+id/itemview_timemode_class"/>

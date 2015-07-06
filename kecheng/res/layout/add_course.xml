@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_light"
+        android:padding="5dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray" />
+
+        <ImageView
+            android:id="@+id/delete_filter"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_delete" />
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/gray"
+        android:textSize="10sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/add_course_search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_bar_bg"
+            android:drawableLeft="@drawable/search_icon"
+            android:drawablePadding="5dp"
+            android:hint="搜索课程"
+            android:textSize="16sp"
+            android:imeOptions="actionSend|flagNoExtractUi"
+            android:inputType="textShortMessage|textAutoCorrect|textCapSentences"
+            android:paddingLeft="13dp"
+            android:singleLine="true" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/hint_parnet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp" 
+        android:layout_marginRight="10dp" 
+        android:layout_marginTop="5dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/myprofile_cover_icon_tip" />
+
+        <TextView
+            android:id="@+id/hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="top"
+            android:gravity="top"
+            android:textSize="10sp"
+            android:text="我们支持全国3126所高校，请在搜索框里输入您的学校名称或拼音进行查找。热门学校："
+            android:textColor="@color/textcolor_66" />
+    </LinearLayout>
+	
+   <!--  <View android:layout_width="fill_parent"
+        android:layout_height="10dp"/> -->
+    <ListView
+        android:id="@+id/add_course_courses"
+        android:layout_width="match_parent"
+        android:divider="@color/divider_bg"
+        android:cacheColorHint="#00000000"
+        android:listSelector="#00000000"
+        android:layout_margin="8dp"
+        android:dividerHeight="1px"
+        android:layout_height="fill_parent" 
+        android:background="@drawable/white_bg_with_shadow"
+        android:focusable="true">
+    </ListView>
+
+</LinearLayout>

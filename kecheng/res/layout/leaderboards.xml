@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:switch="http://schemas.android.com/apk/res/fm.jihua.kecheng_hs"
+    android:id="@+id/root"
+    android:background="@color/app_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+        <fm.jihua.kecheng.ui.widget.AutoTableLayout
+            android:id="@+id/schoolleaderboards"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+        </fm.jihua.kecheng.ui.widget.AutoTableLayout>
+        
+        <fm.jihua.kecheng.ui.widget.AutoTableLayout
+            android:id="@+id/globalleaderboards"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+        </fm.jihua.kecheng.ui.widget.AutoTableLayout>
+        
+    </LinearLayout>
+
+</ScrollView>

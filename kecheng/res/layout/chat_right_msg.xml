@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/message"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_background"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp" >
+
+    <LinearLayout
+        android:id="@+id/msg_fetch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="0dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp" >
+
+        <Button
+            android:id="@+id/btn_fetch_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@+string/more_message"
+            android:visibility="gone" >
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/msg_mssage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="vertical"
+        android:paddingBottom="0dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:shrinkColumns="1"
+        android:stretchColumns="0" >
+
+        <RelativeLayout
+            android:id="@+id/time_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp" >
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/shape_chattext_back"
+                android:singleLine="true"
+                android:textColor="@color/chat_time"
+                android:textSize="11sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right" >
+
+            <LinearLayout
+                android:id="@+id/msg_textcontainer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="45dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:background="@drawable/itembackground_right"
+                android:focusableInTouchMode="true"
+                android:paddingBottom="6dp" >
+                
+                <fm.jihua.kecheng.ui.view.GifMovieView
+                    android:id="@+id/gif1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:onClick="onGifClick"
+                    android:visibility="gone" />
+
+                <fm.jihua.kecheng.ui.widget.EmojiTextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:padding="2sp"
+                    android:singleLine="false"
+                    android:textColor="@color/private_body"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            
+            <fm.jihua.kecheng.ui.widget.CachedImageView
+                    android:id="@+id/imageview"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="gone" />
+
+            <fm.jihua.kecheng.ui.widget.CachedImageView
+                android:id="@+id/avatar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="4dp"
+                android:layout_weight="0"
+                android:src="@drawable/avatar_default_male"
+                android:tag="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

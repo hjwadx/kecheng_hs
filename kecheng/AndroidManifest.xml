@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fm.jihua.kecheng_hs"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="16"
+        />
+
+    <!-- Allows access to the Download Manager -->
+    <permission
+        android:name="com.mozillaonline.permission.ACCESS_DOWNLOAD_MANAGER"
+        android:description="@string/permdesc_downloadManager"
+        android:label="@string/permlab_downloadManager"
+        android:protectionLevel="normal" />
+
+    <!-- Allows advanced access to the Download Manager -->
+    <permission
+        android:name="com.mozillaonline.permission.ACCESS_DOWNLOAD_MANAGER_ADVANCED"
+        android:description="@string/permdesc_downloadManagerAdvanced"
+        android:label="@string/permlab_downloadManagerAdvanced"
+        android:protectionLevel="normal" />
+
+    <!-- Allows to send broadcasts on download completion -->
+    <permission
+        android:name="com.mozillaonline.permission.SEND_DOWNLOAD_COMPLETED_INTENTS"
+        android:description="@string/permdesc_downloadCompletedIntent"
+        android:label="@string/permlab_downloadCompletedIntent"
+        android:protectionLevel="normal" />
+
+    <uses-permission android:name="com.mozillaonline.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="com.mozillaonline.permission.ACCESS_DOWNLOAD_MANAGER_ADVANCED" />
+    <uses-permission android:name="com.mozillaonline.permission.SEND_DOWNLOAD_COMPLETED_INTENTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    
+    
+    <permission android:permissionGroup="android.permission-group.NETWORK"
+		android:label="BeemService" android:description="@string/BeemServiceDescription"
+		android:name="fm.jihua.kecheng.BEEM_SERVICE"/>
+	<uses-permission android:name="fm.jihua.kecheng.BEEM_SERVICE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> 
+	<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+	<uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+	<uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <!-- <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" /> -->
+    <user-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="com.android.permission.READ_SETTINGS"/>
+    <application
+        android:name="fm.jihua.kecheng.App"
+        android:icon="@drawable/icon"
+        android:hardwareAccelerated="true"
+        android:theme="@style/XTheme.Slide"
+        android:label="@string/app_name_hs"
+        android:largeHeap="true">
+        <activity android:name="fm.jihua.kecheng.ui.activity.course.CourseActivity"/>
+        <activity android:name="fm.jihua.kecheng.ui.activity.course.NoteActivity"/>
+        <activity android:name="fm.jihua.kecheng.ui.activity.common.NoticeActivity"/>
+        <activity android:name="fm.jihua.kecheng.ui.activity.course.UsersActivity"/>
+        <activity android:name="fm.jihua.kecheng.ui.activity.EventActivity"/>
+        <activity android:name="fm.jihua.kecheng.ui.activity.register.TutorialActivity" android:theme="@style/TranslucentTheme" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name="fm.jihua.kecheng.ui.activity.profile.ChooseSchoolActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name="fm.jihua.kecheng.ui.activity.register.ChooseRenrenSchoolActivity" />
+        <activity android:name="fm.jihua.kecheng.ui.activity.profile.ChooseDepartmentActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name="fm.jihua.kecheng.ui.activity.profile.ChooseListActivity" />
+        <activity android:name="fm.jihua.kecheng.ui.activity.register.ChooseCityActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name="fm.jihua.kecheng.ui.activity.register.ChooseClassesActivity" />
+        <activity android:name="fm.jihua.kecheng.ui.activity.register.EditProfileActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.course.AddCourseActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden" android:theme="@style/XTheme.Transparent.Popup" android:launchMode="singleTask"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.message.ChatActivity" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustResize"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.course.NewNoteActivity" android:windowSoftInputMode = "adjustPan|stateHidden"  android:theme="@style/XTheme.Transparent.Popup"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.profile.ProfileActivity" android:windowSoftInputMode = "stateAlwaysHidden" />
+		<activity android:name="fm.jihua.kecheng.ui.activity.plugin.FreeTimeFriendsActivity" android:windowSoftInputMode = "adjustPan" />
+		<activity android:name="fm.jihua.kecheng.ui.activity.profile.MyProfile" android:windowSoftInputMode = "adjustPan"  android:theme="@style/XTheme.Transparent.Popup"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.course.NewCourseActivity" android:windowSoftInputMode = "adjustPan|stateHidden" android:theme="@style/XTheme.Transparent.Popup" />
+		<activity android:name="fm.jihua.kecheng.ui.activity.setting.Settings" android:windowSoftInputMode="adjustPan" />
+		<activity android:name="fm.jihua.kecheng.ui.activity.plugin.FreeTime" />
+		<activity android:name="fm.jihua.kecheng.ui.activity.setting.SemesterActivity" />
+		<activity android:name="fm.jihua.kecheng.ui.activity.setting.SemestersActivity" />
+		<activity android:name="fm.jihua.kecheng.ui.activity.message.NotificationsActivity" />
+		<activity android:name="fm.jihua.kecheng.ui.activity.setting.TotalCoursesActivity" />
+		<activity android:name="fm.jihua.kecheng.ui.activity.sticker.ChooseStickerActivity" android:theme="@style/XTheme.Transparent.Popup"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.home.ChooseCoursesActivity" android:theme ="@style/Transparent"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.home.MenuActivity" android:configChanges="orientation|keyboardHidden"  android:windowSoftInputMode="adjustPan"  />
+		<activity android:name="fm.jihua.kecheng.ui.activity.setting.AboutActivity" />
+		<activity android:name="fm.jihua.kecheng.ui.activity.common.ShareActivity" android:label="@string/act_share_title" android:theme="@style/XTheme.Transparent.Popup"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.friend.SNSInviteActivity" android:theme="@style/XTheme.Transparent.Popup"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.friend.AddFriendsActivity" />
+		<activity android:name="fm.jihua.kecheng.ui.activity.friend.InviteActivity" />
+		<activity android:name="fm.jihua.kecheng.ui.activity.setting.RecommendActivity" />
+		<activity android:name="fm.jihua.kecheng.ui.activity.register.RegisterActivity" android:windowSoftInputMode="adjustPan"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.friend.AddFriendsBySNSActivity"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.friend.AddFriendsBySearchActivity"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.setting.EditAccountActivity"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.setting.EditEmailActivity"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.setting.EditPasswordActivity"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.home.WeekActivity"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.home.CourseListActivity"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.plugin.MorePluginActivity"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.plugin.AddExaminationActivity"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.plugin.SkinActivity"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.setting.TextViewerActivity"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.setting.UpdateLogActivity"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.setting.TimeModeActivity"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.setting.BeforeClassActivity" android:theme="@style/TranslucentTheme" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.common.WebViewActivity" android:theme="@style/XTheme.Transparent.Popup"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.course.RateActivity"  android:theme="@style/XTheme.Transparent.Popup"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.plugin.LeaderboardsActivity" />
+		<activity android:name="fm.jihua.kecheng.ui.activity.plugin.RankingsActivity" />
+		<activity android:name="fm.jihua.kecheng.ui.activity.profile.ChooseStatusActivity"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.profile.ChooseBirthdayActivity"/>  
+		<activity android:name="fm.jihua.kecheng.ui.activity.profile.MedalsActivity"/>       
+		<activity android:name="fm.jihua.kecheng.ui.activity.profile.EditTextActivity"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.mall.StickerSetProductActivity"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.mall.MallMineActivity"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.mall.MallMinePasteActivity"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.mall.MallMineSkinActivity"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.mall.MyStickerSetProductsActivity"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.mall.MyThemeProductsActivity"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.baoman.ArticleDetailActivity"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.baoman.BaoManListActivity"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.common.ImageViewerActivity" android:theme="@style/XTheme.Transparent.Popup"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.course.ImportCoursesActivity"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.plugin.SecretPostCommentActivity"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.common.FragmentWrapperActivity" android:theme="@style/XTheme.Transparent" android:launchMode="singleTop"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.plugin.EditMessageActivity" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:screenOrientation="portrait" 
+            android:name="fm.jihua.kecheng.ui.activity.SplashActivity"
+            android:theme="@style/SplashTheme"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="fm.jihua.kecheng.wxapi.WXEntryActivity" android:exported="true"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.export.InputOrListActivity"/>
+		<activity android:name="fm.jihua.kecheng.ui.activity.export.ExchangeActivity" android:theme="@android:style/Theme.Translucent" android:exported="true"/>
+        
+        <!-- 必要的activity 添加在application节点下 -->
+        <activity
+            android:name="com.renn.rennsdk.oauth.OAuthActivity"
+            android:configChanges="orientation|navigation|keyboardHidden" />
+        
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100321004" />
+            </intent-filter>
+        </activity>
+
+		<activity android:name="com.renren.mobile.rmsdk.oauth.auth.OAuthActivity"
+		    android:configChanges="orientation|navigation|keyboardHidden"/>
+		<activity android:name="com.renren.mobile.rmsdk.oauth.auth.ChooseAccountActivity" />
+         <activity android:name="com.tencent.tauth.TAuthView" android:theme="@style/ThemeActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|navigation|orientation">
+			<intent-filter>  
+			    <action android:name="android.intent.action.VIEW" />  
+			    <category android:name="android.intent.category.DEFAULT" />  
+			    <category android:name="android.intent.category.BROWSABLE" />  
+			    <data android:scheme="auth"/>   
+			</intent-filter>  
+        </activity>
+        <activity android:screenOrientation="portrait" android:name="com.umeng.fb.ui.SendFeedback" android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name="com.umeng.fb.ui.FeedbackConversations" />
+        <activity android:name="com.umeng.fb.ui.FeedbackConversation" android:configChanges="keyboard" />
+		<service android:name="fm.jihua.kecheng.BeemService" android:enabled="true"
+			android:label="课程格子后台服务" android:permission="fm.jihua.kecheng.BEEM_SERVICE">
+			<intent-filter>
+				<action android:name="fm.jihua.kecheng.BeemService"></action>
+			</intent-filter>
+		</service>
+		<service
+            android:name="com.umeng.common.net.DownloadingService"
+            android:exported="true"
+            android:process=":DownloadingService" >
+        </service>
+		<service android:name="fm.jihua.kecheng.rest.service.HandDrawnMapDownloadService" >
+		</service>
+
+        <!-- <service android:name="com.parse.PushService" />
+		<receiver android:name="com.parse.ParseBroadcastReceiver">
+		  <intent-filter>
+		    <action android:name="android.intent.action.BOOT_COMPLETED" />
+		    <action android:name="android.intent.action.USER_PRESENT" />
+		  </intent-filter>
+		</receiver> -->
+		<receiver android:name="fm.jihua.kecheng.receiver.SMSSentReceiver">
+		  <intent-filter>
+		    <action android:name="fm.jihua.kecheng.SMS_SENT" />
+		  </intent-filter>
+		</receiver>
+		<receiver android:name="fm.jihua.kecheng.StartupReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</receiver>
+		<receiver android:name="fm.jihua.kecheng.NotificationReceiver">
+		  <intent-filter>
+		    <action android:name="fm.jihua.kecheng.UPDATE_SEMESTER" />
+		  </intent-filter>
+		</receiver>
+		<receiver android:name="fm.jihua.kecheng.KechengAppWidgetProvider">
+            <meta-data android:name="android.appwidget.provider"
+                    android:resource="@xml/appwidget_1x4_provider" />
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="fm.jihua.kecheng.UPDATE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="fm.jihua.kecheng.KechengAppWidget3x4Provider">
+            <meta-data android:name="android.appwidget.provider"
+                    android:resource="@xml/appwidget_3x4_provider" />
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="fm.jihua.kecheng.UPDATE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="fm.jihua.kecheng.KechengAppWidget4x4Provider">
+            <meta-data android:name="android.appwidget.provider"
+                    android:resource="@xml/appwidget_4x4_provider" />
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="fm.jihua.kecheng.UPDATE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="fm.jihua.kecheng.TimeBroadcastReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="fm.jihua.kecheng.wxapi.AppRegister"
+            android:permission="com.tencent.mm.plugin.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="fm.jihua.kecheng.AlarmReceiver"/>
+        <receiver android:name="fm.jihua.kecheng.AlarmTimeModeReceiver"/>
+        <receiver android:name="fm.jihua.kecheng.WakeupReceiver"/>
+        <!-- 正式 -->
+        <meta-data android:value="52468a8156240b0c0a0746b9" android:name="UMENG_APPKEY"></meta-data>
+        <!--Web hiapk appchina anzhi google gfan mumayi nduoa 360 91 eoe babe 163 umengxp oppo wandoujia wo sanxing baidu mm sina xiaomi tianyi 3g hicloud devcn taobao renren le meizu-->
+        <meta-data android:value="Web" android:name="UMENG_CHANNEL"/>
+        <!-- 测试 -->
+        <!-- <meta-data android:value="4fadda4052701564e200003b" android:name="UMENG_APPKEY"></meta-data> -->
+        
+        
+        <provider
+            android:name="com.mozillaonline.providers.downloads.DownloadProvider"
+            android:authorities="com.mozillaonline.providers.downloads" />
+
+        <service android:name="com.mozillaonline.providers.downloads.DownloadService" />
+
+        <receiver
+            android:name="com.mozillaonline.providers.downloads.DownloadReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

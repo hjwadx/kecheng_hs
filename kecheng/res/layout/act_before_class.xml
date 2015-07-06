@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="#3f83ca"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/before_class_textview"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="同学，你的《高数》课程，还有10分钟就要上课了，不要忘记咯" />
+
+        <Button
+            android:id="@+id/before_class_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="我知道了" />
+    </LinearLayout>
+
+</RelativeLayout>

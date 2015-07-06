@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="TextView.Menu_Core" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:textSize">@dimen/home_menu_item_text_size</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    
+    <style name="menu_plugin_item">
+        <item name="android:layout_width">55dp</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:background">@color/purple_selector_linearlayout_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="menu_plugin_image">
+        <item name="android:tag">icon</item>
+        <item name="android:layout_width">@dimen/home_menu_item_icon_size</item>
+        <item name="android:layout_height">@dimen/home_menu_item_icon_size</item>
+    </style>
+    <style name="menu_plugin_text">
+        <item name="android:tag">text</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+</resources>

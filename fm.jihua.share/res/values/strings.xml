@@ -1,0 +1,30 @@
+<resources>
+
+    <string name="app_name">fm.jihua.share</string>
+    <!-- renren oauth sdk -->
+    <string name="renren_login_login">登录</string>
+    <string name="renren_login_use_another_account">使用其他帐号登录</string>
+    <string name="renren_login_account_chooser_title">登录人人网</string>
+    <string name="renren_cant_detect_network_error">检测不到网络连接</string>
+    <string name="renren_network_checked_retry">再试一次</string>
+    <string name="renren_network_error_close">关闭</string>
+    <string name="renren_network_server_error">服务器错误，请稍后再试</string>
+    
+    <string name="renren_load_hud_string">页面加载中</string>
+    
+    
+    <string name="renren_register_tip_str_without_sim">
+    	^ ^ ^ ^ ^ ^ 短信功能不可用。请用手机编辑$密码$发送短信至 $106900867742$，^ 密码为6-20位数字或英文字母，^ 字母区分大小写，
+    	^ 如:we123456，^ 发送完毕即可登录，^ 帐号为发送短信的手机号码。
+    </string>
+    <string name="renren_register_tip_str_with_sim">
+    	^ ^ ^ ^ ^ ^ 编辑$密码$发送短信至 $106900867742$，^ 密码为6-20位数字或英文字母，^ 字母区分大小写。
+    	^ 如:we123456。^ 发送完毕即可登录，^ 帐号为发送短信的手机号码。
+    </string>
+    <string name="renren_send_reg_sms_cancal_button_title">关闭</string>
+    <string name="renren_register_sent_sms_button_title">发送短信至</string>
+    <string name="renren_function_sms_not_support">此设备暂不支持短信功能</string>
+    <string name="renren_login_logging">登录中...</string>
+    <string name="renren_network_connection_error">网络连接错误，请检查您的网络</string>
+
+</resources>

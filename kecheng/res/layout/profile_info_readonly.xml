@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="112dp"
+        android:background="@drawable/white_bg_with_shadow"
+        android:orientation="horizontal"
+        android:padding="2dp" >
+        <TextView 
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@color/main_blue"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:text="教育"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="6dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:text="Education"
+                android:textColor="@color/profile_title"
+                android:textSize="30sp" />
+            <TextView
+                android:id="@+id/school_and_department"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="北京语言大学 英语系"
+                android:textColor="@color/textcolor_66"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/year_and_educational_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="2dp"
+                android:text="2009年入学, 大学生"
+                android:textColor="@color/textcolor_80"
+                android:textSize="15sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="112dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/white_bg_with_shadow"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:visibility="gone"  >
+        <TextView 
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@color/main_blue"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:text="职业"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="6dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:text="Occupation"
+                android:textColor="@color/profile_title"
+                android:textSize="30sp" />
+            <TextView
+                android:id="@+id/field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="目标行业：该同学还很迷茫"
+                android:textColor="@color/textcolor_66"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="2dp"
+                android:text="目前状态：闲来无事"
+                android:textColor="@color/textcolor_80"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="112dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/white_bg_with_shadow"
+        android:orientation="horizontal"
+        android:padding="2dp" >
+        <TextView 
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@color/main_blue"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:text="个人"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="6dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:text="Personal"
+                android:textColor="@color/profile_title"
+                android:textSize="30sp" />
+            <TextView
+                android:id="@+id/personal_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="1990-04-20, 白羊座, 恋爱中"
+                android:textColor="@color/textcolor_66"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/dormitory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="2dp"
+                android:text="宿舍：四处漂泊"
+                android:textColor="@color/textcolor_80"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/autograph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/textcolor_80"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

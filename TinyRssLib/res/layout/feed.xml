@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/select_button_parent"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/main_blue"
+        android:orientation="vertical"
+        android:visibility="gone" >
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/white_alpha_75"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radiobtn_hot"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:button="@null"
+                android:paddingLeft="0dp"
+                android:gravity="center"
+                android:background="@drawable/mall_radiobutton_bg"
+                android:textColor="@color/mall_radiiobutton_text"
+                android:text="干货" />
+            
+            <View 
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white_alpha_75"/>
+
+            <RadioButton
+                android:id="@+id/radiobtn_new"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:button="@null"
+                android:paddingLeft="0dp"
+                android:gravity="center"
+                android:background="@drawable/mall_radiobutton_bg"
+                android:textColor="@color/mall_radiiobutton_text"
+                android:text="嫩草" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <ListView android:id="@android:id/list"
+       style="@style/FeedList">
+        
+    </ListView>
+
+</LinearLayout>

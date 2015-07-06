@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:switch="http://schemas.android.com/apk/res/fm.jihua.kecheng_hs"
+    android:id="@+id/root"
+    android:background="@color/app_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_shadow"
+            android:orientation="vertical" >
+			<LinearLayout
+                android:id="@+id/search_by_gezi_id"
+                style="@style/style_horizontal_layout_with_click_effect" 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/friends_import_icon_search" 
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp"
+                    android:text="根据格子号查找好友"
+                    android:textColor="@color/textcolor_4c"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/myprofile_list_icon_arrow"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    android:textColor="@color/textcolor_80"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+            
+			<View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_bg" />
+			
+            <LinearLayout
+                android:id="@+id/search"
+                style="@style/style_horizontal_layout_with_click_effect"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/friends_import_icon_search" 
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp"
+                    android:text="根据名字查找好友"
+                    android:textColor="@color/textcolor_4c"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/myprofile_list_icon_arrow"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    android:textColor="@color/textcolor_80"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_shadow"
+            android:orientation="vertical" >
+
+            <!-- <LinearLayout
+                android:id="@+id/phone"
+                android:gravity="center_vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/friends_import_icon_phone" 
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp"
+                    android:text="从手机通讯录添加"
+                    android:textColor="@color/profiletitle"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/time_slot_length"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:drawableRight="@drawable/list_tappable"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    android:textColor="@color/profiletitle"
+                    android:textSize="16dp" />
+            </LinearLayout> -->
+            
+            <LinearLayout
+                android:id="@+id/renren"
+                style="@style/style_horizontal_layout_with_click_effect" 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/friends_import_icon_renren" 
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp"
+                    android:text="从人人网添加"
+                    android:textColor="@color/textcolor_4c"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/myprofile_list_icon_arrow"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    android:textColor="@color/textcolor_80"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+            
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_bg" />
+            
+            <LinearLayout
+                android:id="@+id/weibo"
+                style="@style/style_horizontal_layout_with_click_effect" 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/friends_import_icon_weibo" 
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp"
+                    android:text="从新浪微博添加"
+                    android:textColor="@color/textcolor_4c"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/myprofile_list_icon_arrow"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    android:textColor="@color/textcolor_80"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+            
+            <!-- <LinearLayout
+                android:id="@+id/t_weibo"
+                android:gravity="center_vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/friends_import_icon_tecent" 
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp"
+                    android:text="从腾讯微博添加"
+                    android:textColor="@color/profiletitle"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:drawableRight="@drawable/list_tappable"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    android:textColor="@color/profiletitle"
+                    android:textSize="16dp" />
+            </LinearLayout> -->
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_shadow"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/same_school"
+                style="@style/style_horizontal_layout_with_click_effect" 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/friends_import_icon_school" 
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp"
+                    android:text="同校的同学"
+                    android:textColor="@color/textcolor_4c"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/myprofile_list_icon_arrow"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    android:textColor="@color/textcolor_80"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+            
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_bg" />
+            
+            <LinearLayout
+                android:id="@+id/same_grade"
+                style="@style/style_horizontal_layout_with_click_effect" 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/friends_import_icon_school" 
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp"
+                    android:text="同年级的同学"
+                    android:textColor="@color/textcolor_4c"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/myprofile_list_icon_arrow"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    android:textColor="@color/textcolor_80"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+            
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_bg" />
+            
+            <LinearLayout
+                android:id="@+id/same_class"
+                style="@style/style_horizontal_layout_with_click_effect" 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/friends_import_icon_school" 
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp"
+                    android:text="同班的同学"
+                    android:textColor="@color/textcolor_4c"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/myprofile_list_icon_arrow"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    android:textColor="@color/textcolor_80"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+            
+             
+            
+            <!--<LinearLayout
+                android:id="@+id/school"
+                android:gravity="center_vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/friends_import_icon_school" 
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp"
+                    android:text="校园之星"
+                    android:textColor="@color/profiletitle"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:drawableRight="@drawable/list_tappable"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    android:textColor="@color/profiletitle"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/feature"
+                android:gravity="center_vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp"
+                    android:text="随便看看"
+                    android:textColor="@color/profiletitle"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:drawableRight="@drawable/list_tappable"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    android:textColor="@color/profiletitle"
+                    android:textSize="16dp" /> 
+            </LinearLayout>-->
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_shadow"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:id="@+id/follower"
+                style="@style/style_horizontal_layout_with_click_effect"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/friends_import_icon_follower" 
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp"
+                    android:text="加我为好友的同学"
+                    android:textColor="@color/textcolor_4c"
+                    android:textSize="15sp"
+                    android:textStyle="bold"  />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/myprofile_list_icon_arrow"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    android:textColor="@color/textcolor_80"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

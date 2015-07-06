@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <FrameLayout
+        android:id="@+id/main_fragment_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/keyboard_bg_repeat" >
+    </FrameLayout>
+
+    <!--
+    <fm.jihua.kecheng.ui.widget.ScrollLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp" />
+
+    <LinearLayout
+        android:id="@+id/scrollContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scrollLayout"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:paddingBottom="12dp"
+        android:tag="scroller" >
+    </LinearLayout>
+    -->
+
+    <include
+        android:id="@+id/layout_paster_horizontalscrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:layout_below="@id/main_fragment_container"
+        layout="@layout/layout_paster_bottom_item" />
+
+</RelativeLayout>

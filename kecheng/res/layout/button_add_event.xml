@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btn_add_event_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical" >
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/toolbar_shadow" />
+
+    <LinearLayout
+        android:id="@+id/btn_add_event"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="@color/white_item_selector_linearlayout_bg"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/activity_btn_icon_participate" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="4dp"
+            android:text="我要参加"
+            android:textColor="@color/main_blue"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

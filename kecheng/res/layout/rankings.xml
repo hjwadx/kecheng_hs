@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:background="@color/app_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/list1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_background"
+            android:cacheColorHint="#00000000"
+            android:dividerHeight="0px"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+             />
+
+    <LinearLayout
+        android:id="@+id/empty"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/leaderboard_null" />
+
+        <TextView
+            android:padding="30dp"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginBottom="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="速速参与课程评价，\n热腾腾的课程排行榜马上出炉！" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cachedimage="http://schemas.android.com/apk/res/fm.jihua.kecheng_hs"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/app_background">
+
+    <ScrollView
+        android:id="@+id/root"
+        android:background="@color/app_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="-4dp"
+        android:layout_weight="1"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:orientation="vertical" >
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/white_bg_with_shadow"
+                android:gravity="bottom"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/friendprofile_cover_default"
+                    android:gravity="bottom"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:gravity="bottom"
+                        android:orientation="horizontal" >
+
+                        <fm.jihua.kecheng.ui.widget.CachedImageView
+                            android:id="@+id/avatar"
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:onClick="onClick"
+                            android:src="@drawable/uploadface" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingRight="6dp" >
+
+                            <TextView
+                                android:id="@+id/name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="6dp"
+                                android:drawableRight="@drawable/friendprofile_gender_male"
+                                android:shadowColor="@color/profile_shadow"
+                                android:shadowDx="3"
+                                android:shadowDy="3"
+                                android:shadowRadius="5"
+                                android:text="晓彤_Alice"
+                                android:textColor="@color/white"
+                                android:textSize="23sp" />
+
+                            <TextView
+                                android:id="@+id/gezi_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:shadowColor="@color/profile_shadow"
+                                android:shadowDx="3"
+                                android:shadowDy="3"
+                                android:shadowRadius="5"
+                                android:text="格子号:1622469"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/small_avatar_parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <fm.jihua.kecheng.ui.widget.CachedImageView
+                            android:id="@+id/small_avatar0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/white_alpha_50"
+                            android:onClick="onClick"
+                            cachedimage:isSquare="true" />
+
+                        <fm.jihua.kecheng.ui.widget.CachedImageView
+                            android:id="@+id/small_avatar1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/white_alpha_75"
+                            android:onClick="onClick"
+                            cachedimage:isSquare="true" />
+
+                        <fm.jihua.kecheng.ui.widget.CachedImageView
+                            android:id="@+id/small_avatar2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/white_alpha_50"
+                            android:onClick="onClick"
+                            cachedimage:isSquare="true" />
+
+                        <fm.jihua.kecheng.ui.widget.CachedImageView
+                            android:id="@+id/small_avatar3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/white_alpha_75"
+                            android:onClick="onClick"
+                            cachedimage:isSquare="true" />
+
+                        <fm.jihua.kecheng.ui.widget.CachedImageView
+                            android:id="@+id/small_avatar4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/white_alpha_50"
+                            android:onClick="onClick"
+                            cachedimage:isSquare="true" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/profile_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_marginTop="-4dp"
+                android:layout_marginBottom="8dp" >
+
+
+                <include layout="@layout/profile_info_readonly" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/profile_toolbar"
+         />
+
+</LinearLayout>

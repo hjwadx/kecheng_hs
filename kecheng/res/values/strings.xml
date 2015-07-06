@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, HelloworldActivity!</string>
+    <string name="app_name">课程格子</string>
+    <string name="app_name_hs">暴走课表-课程格子中学版</string>
+	<string name="say_something"><u>说点什么</u></string>
+    <string name="pull_to_refresh_pull_label">松开可以刷新</string>
+    <string name="pull_to_refresh_release_label">松开可以刷新</string>
+    <string name="pull_to_refresh_refreshing_label">加载中...</string>
+    <string name="pull_to_refresh_tap_label">点击刷新</string>
+	<string name="OkButton">Ok</string>
+	<string name="ClearButton">Clear</string>
+	<string name="CancelButton">Cancel</string>
+	<string name="AcceptButton">Authorize</string>
+	<string name="RefuseButton">Deny</string>
+	<string name="JabberID">Jabber ID</string>
+	<string name="Password">Password</string>
+	<string name="Continue">Continue</string>
+	<string name="tutorial_title_1">自备课程信息库</string>
+	<string name="tutorial_content_1">课程格子是唯一不用手动输入课程的课程表。支持人人登陆，自动设定学校、学期，自动提供课程选择列表。</string>
+	<string name="tutorial_title_2">每日/全周双预览方式</string>
+	<string name="tutorial_content_2">日模式查看全天课程详情，一键切换周模式一览整周课程安排。</string>
+	<string name="tutorial_title_3">同一节课的同学</string>
+	<string name="tutorial_content_3">点击课程查看详情，找到与你选同一节课的同学。</string>
+	<string name="tutorial_title_4">空闲时间安排</string>
+	<string name="tutorial_content_4">空闲时间别浪费，多种活动任你选；看看谁有空，没事找个同学聊聊天。</string>
+	<string name="vacation">vacation</string>
+	<string name="wakeup_time">wakeup_time</string>
+	<string name="notification">notification</string>
+	<string name="week_past">week_past</string>
+	<string name="notification_vibrate">notification_vibrate</string>
+	<string name="notification_sound">notification_sound</string>
+	<string name="notification_sound_enable">notification_sound_enable</string>
+	<string name="notification_time">notification_time</string>
+	<string name="time_slot_length">time_slot_length</string>
+	<string name="time_mode">课程时间设置</string>
+	<string name="last_local_event_id">last_local_event_id</string>
+	<string name="ringer_mode">ringer_mode</string>
+	<string name="time_mode_before_class">time_mode_before_class</string>
+	<string name="time_mode_class_mute">time_mode_class_mute</string>
+	<string name="default_main_view">default_main_view</string>
+	<string name="remind_mute_before_class">remind_mute_before_class</string>
+	<!-- Switch - accessibility support -->
+    <!-- Description of the on state of a Switch. [CHAR LIMIT=NONE] -->
+    <string name="switch_on">on</string>
+    <!-- Description of the off state of a Switch. [CHAR LIMIT=NONE] -->
+    <string name="switch_off">off</string>
+
+	<!--  AccountConfigure class -->
+	<string name="AccountConfigureManualConfiguration">Manual Configuration</string>
+
+	<!--  Beem class -->
+	<string name="BeemJabberID">Jabber ID</string>
+
+	<!--  App class -->
+	<string name="AppConnect">Connecting...</string>
+
+	<!--  BeemService class -->
+	<string name="BeemServiceDescription">Use Beem Service</string>
+	<string name="BeemServiceCreated">Beem Service Created</string>
+	<string name="BeemServiceDestroyed">Beem Service Destroyed</string>
+
+	<!--  ContactDialog class -->
+	<string name="CDChat">Chat</string>
+	<string name="CDCall">Call</string>
+	<string name="CDInfos">Manage User</string>
+
+	<!-- AddContact class -->
+	<string name="AddCActTitle">Beem - Add a contact</string>
+
+	<string name="AddCLogin">Username</string>
+	<string name="AddCAlias">Alias</string>
+	<string name="AddCGroup">Group</string>
+	<string name="AddCOkButton">Add</string>
+	<string name="AddCContactAdded">Contact added</string>
+	<string name="AddCContactAddedError">Error Contact not added</string>
+	<string name="AddCContactAddedLoginError">Error Login</string>
+	<string name="AddCBadForm">Bad form</string>
+	<string name="AddCContactAlready">Contact already exist</string>
+
+	<!--  ChangeStatus class -->
+	<string name="ChangeStatusActTitle">Beem - Change my status</string>
+	<string name="ChangeStatusType">My status</string>
+	<string name="ChangeStatusMessage">My personal message</string>
+	<string name="OpenContactList">Open contact list</string>
+
+	<string name="MenuAddContact">Add new contact</string>
+	<string name="MenuAccountAbout">Beem Project</string>
+	<string name="MenuAccountCreate">Create account</string>
+	<string name="MenuConnection">Edit account</string>
+	<string name="ChangeStatusOk">Updating status</string>
+	<string name="ChangeStatusNoChange">Nothing to change</string>
+	<string name="my_avatar">My avatar</string>
+	<string name="select_avatar">Choose your avatar</string>
+	<string name="take_photo">Take a photo</string>
+	<string name="pick_photo">Select a picture</string>
+	<string name="delete_avatar">No avatar</string>
+	<string name="photoPickerNotFoundText">Photo picker not found</string>
+
+
+	<!-- Settings class -->
+	<string name="SettingsText">Edit your username</string>
+	<string name="SettingsPassword">Edit your password</string>
+	<string name="SettingsProxy">Proxy</string>
+	<string name="SettingsProxyProxy">Use a proxy server</string>
+	<string name="SettingsProxySummary">Login through a proxy server</string>
+	<string name="SettingsProxyType">Protocol</string>
+	<string name="SettingsProxyTypeSummary">Choose the proxy server type</string>
+	<string name="SettingsProxyServer">Edit proxy server address</string>
+	<string name="SettingsProxyPort">Edit proxy server port</string>
+	<string name="SettingsProxyUser">Optional, allow to authenticate yourself on the proxy server</string>
+	<string name="SettingsProxyPassword">Optional, allow to authenticate yourself on the proxy server</string>
+	<string name="SettingsAdvanced">Advanced</string>
+	<string name="SettingsAdvancedOptions">Specific server option</string>
+	<string name="SettingsAdvancedRecoDelay">Modify reconnection delay</string>
+	<string name="SettingsAdvancedSpecOpt">Check this box if you want to use a specific server for your connection</string>
+	<string name="SettingsAdvancedAddOpt">Edit the server address</string>
+	<string name="SettingsAdvancedPortOpt">Edit the server port</string>
+	<string name="SettingsResourceTitle">Resource</string>
+	<string name="SettingsPriorityTitle">Priority</string>
+	<string name="SettingsResourceSummary">Set the XMPP resource of your client </string>
+	<string name="SettingsPrioritySummary">Set the priority of your client</string>
+	<string name="contact_list_preferences">Buddy list</string>
+	<string name="contact_list_preferences_sum">A set of display options for your buddy list
+	</string>
+	<string name="CLP_hide_groups">Hide groups</string>
+	<string name="CLP_hide_groups_sum">Check this option to hide groups</string>
+	<string name="CLP_hidden_contact">Hide buddies</string>
+	<string name="CLP_hidden_contact_sum">Check this option to hide unconnected buddies
+	</string>
+	<string name="settings_account_username">Username (JID)</string>
+	<string name="login_username_info_default">beem@beem-project.com</string>
+	<string name="settings_account_password">Password</string>
+	<string name="settings_account_server">Server</string>
+	<string name="settings_account_port">Port</string>
+	<string name="settings_advanced_service_behaviour">Service behaviour</string>
+	<string name="settings_advanced_sum">A set of options for advanced users</string>
+	<string name="settings_xmpp_server">Address</string>
+	<string name="comments_xmpp_server">example.com</string>
+	<string name="settings_xmpp_port">Port</string>
+	<string name="settings_xmpp_use_tls">Require SSL/TLS</string>
+	<string name="settings_reco_delay">Reconnection delay</string>
+	<string name="comments_xmpp_port">Default: 5222</string>
+	<string name="settings_proxy_sum">Settings for proxy usage</string>
+	<string name="settings_proxy_use">Connect using a proxy</string>
+	<string name="settings_proxy_type_prompt">Choose a type of proxy</string>
+	<string name="settings_proxy_server">Server</string>
+	<string name="settings_proxy_port">Port</string>
+	<string name="comments_proxy_port">Default: 1080</string>
+	<string name="settings_proxy_username">Username</string>
+	<string name="settings_proxy_password">Password</string>
+	<string name="away_chk_title">Enable Auto-away</string>
+	<string name="away_chk_sum">Change status to Away when the screen is turned off</string>
+	<string name="away_message_title">Away message</string>
+	<string name="away_message_sum">The away message that will be displayed</string>
+	<string name="away_message_hint">I\'m away, my cellphone screen is off</string>
+	<string name="notification_preferences">Notification settings</string>
+	<string name="notification_enable_vibrate_title">Enable vibrate</string>
+	<string name="notification_enable_vibrate_sum">Enable vibrate on incoming messages</string>
+	<string name="notification_snd_title">Message ringtone</string>
+	<string name="notification_snd_sum">Set your incoming message ringtone</string>
+	<string name="settings_chat_compact">Chat compact</string>
+	<string name="settings_chat_compact_sum">Set the chat windows compact</string>
+	<string name="history">History</string>
+	<string name="history_sum">Check this to save chats on the SDCard</string>
+	<string name="history_mount">You need to have SDcard mounted and writable to enable history</string>
+	<string name="history_on_off">Enable history messages</string>
+	<string name="chat_preferences">Chat</string>
+	<string name="chat_preferences_sum">History, Layout size ...</string>
+	<string name="chat_history_path">History path</string>
+	<string name="chat_history_path_sum">Chat conversations are saved in a folder on the SDCard</string>
+	<string name="settings_smack_debug">Enable XMPP debug</string>
+	<string name="settings_full_jid_login">Use my full JID as username</string>
+	<string name="settings_full_jid_login_sum">Need by some server such as Google Talk</string>
+
+	<!-- Subscription class -->
+	<string name="SubscriptAccept">Subscription accepted</string>
+	<string name="SubscriptError">Subscription error</string>
+	<string name="SubscriptRefused">Subscription refused</string>
+	<string name="SubscriptText">%s wants to add you to his/her buddy list. Do you want to authorize him/her?</string>
+	<string name="SubscriptTitle">Authorize buddy?</string>
+
+	<!--  BeemChatManager -->
+	<string name="BeemChatManagerNewMessage">You\'ve a new message</string>
+
+	<!--  BeemBroadcastReceiver class -->
+	<string name="BeemBroadcastReceiverDisconnect">课程格子:你的连接已断开</string>
+
+	<!--  XmppConnectionAdapter class -->
+	<string name="AcceptContactRequest">%s刚将你添加到他/她的好友列表.</string>
+	<string name="AcceptContactRequestFrom">批准%s联系你</string>
+
+	<!-- Activities -->
+	<string name="login_tag">Beem - Login Activity</string>
+	<string name="edit_settings_name">Beem - Settings</string>
+	<string name="edit_settings_tag">Beem - EditSettings Activity</string>
+	<string name="create_account_name">Beem - Create an account</string>
+	<string name="create_account_tag">Beem - CreateAccount Activity</string>
+	<string name="contact_list_name">Beem - Contacts</string>
+	<string name="contact_list_tag">Beem - ContactList Activity</string>
+	<string name="user_info_name">Beem - User Info</string>
+
+	<!-- Buttons -->
+	<string name="button_create_account">Create this account</string>
+	<string name="button_create_login_account">Create and use this account</string>
+
+	<!-- LogAs Activity -->
+	<string name="login_username">Username</string>
+	<string name="login_password">Password</string>
+	<string name="login_error_dialog_title">Login - Error</string>
+	<string name="login_close_dialog_button">Close</string>
+	<string name="login_menu_create_account">Create an account</string>
+	<string name="login_menu_settings">Settings</string>
+	<string name="login_menu_about">About</string>
+	<string name="login_about_title">Beem %s - About</string>
+	<string name="login_about_msg">
+		Beem is an EPITECH Innovative Project. Visit us at
+		http://www.beem-project.com !
+	</string>
+	<string name="login_about_button">Close</string>
+	<string name="login_settings_button">Settings</string>
+	<string name="login_login_button">Log in</string>
+	<string name="login_login_progress">Connecting. Please wait...</string>
+	<string name="login_error_msg">Unfortunately, an error occured.\n\nError
+		detail:\n%s</string>
+	<string name="login_menu_login">Login</string>
+	<string name="login_no_connectivity">No internet connection found</string>
+	<string name="login_start_msg">Settings configuration in menu</string>
+
+	<!-- LoginAnim activity -->
+	<string name="loganim_connecting">Connecting ...</string>
+	<string name="loganim_authenticating">Authenticating ...</string>
+	<string name="loganim_login_success">Login success</string>
+	<string name="loganim_login_failed">Login failed</string>
+
+	<!-- EditSettings Activity -->
+	<string name="settings_menu_create_account">Create an account</string>
+	<string name="settings_menu_privacy_lists">Manage my privacy lists</string>
+	<string name="settings_saved_ok">The settings have been saved successfully.</string>
+
+
+
+	<!-- EditSettings Activity Categories -->
+	<string name="general_preferences">General preferences</string>
+	<string name="user_preferences">User settings (required)</string>
+	<string name="user_preferences_advanced">User settings advanced (optional)</string>
+	<string name="network_preferences">Network options</string>
+	<string name="proxy_proxy_settings">Proxy settings</string>
+	<string name="proxy_user_settings">Proxy settings</string>
+	<string name="history_preferences">History</string>
+	<string name="chat_layout_option">Chat layout</string>
+
+
+	<!-- EditSettings Activity Tabs -->
+	<string name="settings_tab_tag_account">edit_settings_tab_account</string>
+	<string name="settings_tab_label_account">Account</string>
+	<string name="settings_tab_tag_xmpp">edit_settings_tab_xmpp</string>
+	<string name="settings_tab_label_xmpp">XMPP</string>
+	<string name="settings_tab_tag_proxy">edit_settings_tab_proxy</string>
+	<string name="settings_tab_label_proxy">Proxy</string>
+
+
+	<!-- wizard activities -->
+	<string name="account_wizard_text1"><b>Welcome on BEEM.</b>\n\nYou have not configured an XMPP (Jabber) account yet.\nChoose one of the following options :</string>
+	<string name="account_wizard_configure_text"><b>Please fill in the data for your existing account</b></string>
+	<string name="account_wizard_configure_account">I already have an account I want to use</string>
+	<string name="account_wizard_create_account">I want to register for a new account</string>
+
+	<!-- Create an account Activity -->
+	<string name="create_account_instr_dialog_title">Create an account - Instructions</string>
+	<string name="create_account_err_dialog_title">Create an account - Error</string>
+	<string name="create_account_err_dialog_settings_button">Change my settings</string>
+	<string name="create_account_close_dialog_button">Close</string>
+	<string name="create_account_successfull_after">account %s has been created successfully</string>
+	<string name="create_account_err_username">Bad JabberID</string>
+	<string name="create_account_err_passwords">Passwords do not match.</string>
+	<string name="create_account_username">Username</string>
+	<string name="create_account_password">Password</string>
+	<string name="create_account_confirm_password">Confirm password</string>
+
+	<!-- ContactList Activity  -->
+	<string name="contact_list_menu_add_contact">Add a contact</string>
+	<string name="contact_list_menu_status">Change status</string>
+	<string name="contact_list_menu_settings">Settings</string>
+	<string name="contact_list_menu_disconnect">Disconnect</string>
+	<string name="contact_list_all_contact">All contacts</string>
+	<string name="contact_list_no_group">No group</string>
+
+	<!-- UserInfo dialog -->
+	<string name="userinfo_label_alias">Alias</string>
+	<string name="userinfo_label_chg_group">Manage groups</string>
+	<string name="userinfo_label_re_subscription">Resend invit</string>
+	<string name="userinfo_label_block">Block</string>
+	<string name="userinfo_label_delete">Delete</string>
+	<string name="userinfo_resend">Suscription resend</string>
+	<string name="userinfo_sure2delete">Are you sure you want to delete this contact?
+	</string>
+	<string name="userinfo_yes">Yes</string>
+	<string name="userinfo_no">No</string>
+	<string name="userinfo_sureresend">Are you sure you want to resend invit?</string>
+
+	<string name="chat_name">Beem - Chat</string>
+	<string name="chat_input_default_value">尽情享受聊天吧</string>
+	<string name="chat_self">Me</string>
+	<string name="chat_error">Error</string>
+	<string name="chat_send_message">发送</string>
+	<string name="chat_menu_contacts_list">Contacts list</string>
+	<string name="chat_menu_change_chat">Switch chat</string>
+	<string name="chat_menu_start_otr_session">Start OTR session</string>
+	<string name="chat_menu_stop_otr_session">Stop OTR session</string>
+	<string name="chat_menu_otr_verify_key">OTR verify key</string>
+	<string name="chat_menu_otr_submenu">OTR actions</string>
+	<string name="chat_dialog_change_chat_title">Opened chats</string>
+	<string name="chat_menu_close_chat">Close this chat</string>
+	<string name="chat_no_more_chats">No more active chats</string>
+	<string name="chat_state_composing">is composing a message</string>
+	<string name="chat_state_gone">has left the conversation</string>
+	<string name="chat_state_active">pays attention to the conversation</string>
+	<string name="chat_state_inactive">is doing another thing</string>
+	<string name="chat_otrstate_plaintext">PLAINTEXT</string>
+	<string name="chat_otrstate_encrypted">ENCRYPTED</string>
+	<string name="chat_otrstate_finished">FINISHED</string>
+	<string name="chat_otrstate_authenticated">AUTHENTICATED</string>
+	<string name="chat_otr_verify_key" formatted="false">
+	Authenticating a buddy helps ensure that the person you are talking to is who they claim to be.\n\n
+	To verify the fingerprint, contact your buddy via some <i>other</i> authenticated channel, such as the telephone or GPG-signed email.  Each of you should tell your fingerprint to the other.\n\n
+	If everything matches up, you should indicate in the above dialog that you <b>have</b> verified the fingerprint.\n\n
+	Local fingerprint %s\n\nRemote fingerprint %s\n\nVerify fingerprint ?</string>
+
+	<string name="contact_status_msg_available">Available</string>
+	<string name="contact_status_msg_available_chat">Available to chat</string>
+	<string name="contact_status_msg_dnd">Do not disturb</string>
+	<string name="contact_status_msg_away">Away</string>
+	<string name="contact_status_msg_xa">Unavailable</string>
+	<string name="contact_status_msg_offline">Disconnected</string>
+
+	<string name="privacy_list_name">Beem - Manage my privacy lists</string>
+	<string name="privacy_list_no_data">There aren\'t any privacy list registered.</string>
+	<string name="privacy_list_menu_create">Create a privacy list</string>
+	<string name="privacy_list_create_dialog_title">Create a privacy list</string>
+	<string name="privacy_list_create_dialog_list_name_label">Title</string>
+	<string name="privacy_list_create_dialog_create_button">Create</string>
+	<string name="privacy_list_select_dialog_buddies">Buddies</string>
+	<string name="privacy_list_select_dialog_groups">Groups</string>
+	<string name="privacy_list_select_dialog_delete">Delete</string>
+	<string name="privacy_list_delete_dialog_msg">Do you really want to delete the privacy list entitled \'%s\'?</string>
+	<string name="privacy_list_delete_dialog_yes">Yes</string>
+	<string name="privacy_list_delete_dialog_no">No</string>
+
+	<string name="UpdateButton">Update</string>
+
+	<!-- MemorizingTrustManager library -->
+	<string name="mtm_accept_cert">Accept Unknown Certificate?</string>
+	<string name="mtm_decision_always">Always</string>
+	<string name="mtm_decision_once">Once</string>
+	<string name="mtm_decision_abort">Abort</string>
+
+	<string name="mtm_notification">Certificate Verification</string>
+
+	<!-- Error messages -->
+
+	<string name="error_login_authentication">验证时发生错误,用户名或者密码错误.</string>
+
+	<string name="interna_server_error">Remote server error</string>
+	<string name="bad_request">bad-request</string>
+	<string name="forbidden">forbidden</string>
+	<string name="item_not_found">item-not-found</string>
+	<string name="conflict">conflict</string>
+	<string name="feature_not_implemented">feature-not-implemented</string>
+	<string name="gone">gone</string>
+	<string name="jid_malformed">jid-malformed</string>
+	<string name="no_acceptable">no-acceptable</string>
+	<string name="not_allowed">not-allowed</string>
+	<string name="not_authorized">not-authorized</string>
+	<string name="payment_required">payment-required</string>
+	<string name="recipient_unavailable">recipient-unavailable</string>
+	<string name="redirect">redirect</string>
+	<string name="registration_required">registration-required</string>
+	<string name="remote_server_not_found">Remote server not found</string>
+	<string name="remote_server_timeout">No server response</string>
+	<string name="remote_server_error">Remote server error</string>
+	<string name="resource_constraint">resource-constraint</string>
+	<string name="service_unavailable">service-unavailable</string>
+	<string name="subscription_required">subscription-required</string>
+	<string name="undefined_condition">undefined-condition</string>
+	<string name="unexpected_condition">unexpected-condition</string>
+	<string name="request_timeout">request-timeout</string>
+	<string name="AddFriendCourse">添 加 到 我 的 课 表</string>
+	<string name="help_content">Q 如何复制同学课表？\nA 在我的课表页面点击下面的功能按钮选择添课后，在右上角可以切换到复制同学状态，点击同学列表查看他的课表，点击下面的“一键复制Ta的课”按钮，勾选你需要的课程，就可以成功复制该同学的课表了。\n\nQ 如何编辑/删除课程？\nA 我的课表点击课程进入课程详情页面，课程信息旁的编辑按钮可以编辑课程，最下方的删除按钮可以退出参加此门课程。\n\nQ 记不住密码了怎么办？/当初没设置密码怎么办？\nA 找回账号可以发送格子号、姓名、学校、年级、最后登陆时间以及尽可能多的好友姓名到kefu@creatingev.com，会有工作人员帮你验证并设置初始密码。\n\nQ 我该怎么删除掉贴在课表上的贴纸？\nA 长按贴在课表上的贴纸可以进入编辑状态，点击左上角的垃圾桶按钮就可以删除贴纸了。\n\nQ 为什么没有我的学校？该怎么添加？\nA 请将贵校的官方名称及具体情况发送到kefu@creatingev.com，我们会认真核对贵校官网上的信息并更新这些数据。\n\nQ 如何联系我们？\nA可以在人人网、新浪微博搜索“课程格子”找到我们的认证主页。也可以通过应用里面“设置-反馈”把你的建议告诉我们。欢迎添加我们的微信，微信号：ClassBox</string>
+	<string name="update_log">更新日志</string>
+	<!-- secret_post -->
+	<string name="secret_post_new_hint">吐槽、秘密、求助、新鲜事，通通吐给树洞知。请不要使用您或者其他人的真实信息（电话 地址等），以免给您或其他人带来麻烦。格子君会删除不符合以上要求的投稿。树洞好，树洞妙，说给树洞没烦恼。吐槽秘密都埋好，与我分享好不好。</string>
+	<string name="secret_post_comment_hint">说点什么吧...</string>
+
+
+	<string name="addCourseWeekTextView">添加上课周数</string>
+	<string name="chat_dialog_title">功能</string>
+	<string name="double_click_to_exit">再按一次退出程序</string>
+	<string-array name="chatLongClickItem">
+	    <item >复制内容</item>
+	</string-array>
+	<item type="id" name="tag_anim"></item>
+	<string name="act_share_title">分享</string>
+	<string name="act_setting_title">设置</string>
+	<string name="act_message_center_title">消息中心</string>
+	<string name="act_web_view_title">内嵌浏览器</string>
+	<string name="act_add_course_title">自由添加</string>
+	<string name="act_course_title">我的课程</string>
+	<string name="act_course_new_course">添加</string>
+	<string name="act_course_share">分享</string>
+	<string name="act_import_course_title">教务导入</string>
+	<string name="act_note_title">笔记详情</string>
+	<string name="act_add_friends_title">添加好友</string>
+	<string name="turn_to_slient">已经将手机设置为上课%1$s模式</string>
+	<string name="turn_2_normal">已经还原手机声音设置</string>
+	<string name="choise_start_end_time">设置课程时间</string>
+	<string name="certain">确定</string>
+	<string name="title_import_course">可导入的课程</string>
+	<string name="import_action">导入</string>
+	<string name="choice_import_course">请选择要导入的课程</string>
+	<string name="choice_slot_length">请选择课程节数</string>
+	<string name="time_mode_befroe_class_time">请选择提醒前置时间(分钟)</string>
+	<string name="time_mode_string_textview">课前 %1$s 分钟</string>
+	<string name="paster_hint_string">你的课表太满了，放不下这张贴纸啦。</string>
+	<string name="register_no_account_hint">账号密码不能为空</string>
+	<string name="act_error_get_tags">获取标签失败</string>
+	<string name="network_error_string">网络好像不大给力啊</string>
+	<string name="apply_error_string">申请失败，请稍后再试</string>
+	<string name="download">下载</string>
+	<string name="download_cancle">取消下载</string>
+	<string name="apply">申请</string>
+	<string name="please_network">在联网状态下设置主题，才能上传成功</string>
+	
+	<string name="time_mode_string_before_class">《%1$s》还有%2$s分钟就要上课了</string>
+	<string name="time_mode_string_before_class_event">活动[%1$s] %2$s分钟后即将开始</string>
+	<string name="time_mode_string_mute_start">格子帮你调整到上课静音模式</string>
+	<string name="time_mode_string_mute_end">下课啦，格子帮你恢复了手机设置</string>
+	<string name="time_mode_mute_category">静音类型设置</string>
+	
+	<string name="paste_order">paste_order</string>
+	<string name="theme_order">theme_order</string>
+	<string name="mall_mine_returnall_paste">恢复所有购买</string>
+	<string name="week_no_theme_notice">皮肤不存在，将使用默认皮肤。</string>
+	<string name="week_no_sd_card_notice">存储卡不可用，将使用默认皮肤。</string>
+
+</resources>

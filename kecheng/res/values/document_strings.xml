@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 分享 -->
+    <string name="share_title_normal">分享自课程格子</string>
+    <string name="share_sns_invite">#小课表，大格局#迷茫不知前路？庸碌不知归处？课程格子不能帮你预测未来，但能给你前进的力量。正能量，一起来。</string>
+    <string-array name="share_weekview">
+        <item >#小课表，大格局#这就是我这学期的课表啦，向着学霸道路前进！前进！前进！@课程格子</item>
+        <item >自从有了课程格子，妈妈再也不用担心我的学习。你也来#把课表装进手机#吧！</item>
+        <item >#小课表，大格局#学霸的世界你不懂。@课程格子</item>
+        <item >#小课表，大格局#今天一门课，未来一扇窗。@课程格子</item>
+        <item > #小课表，大格局#课表如此，累感不爱。@课程格子</item>
+    </string-array>
+    <string name="first_bind_sns">每张课表都记录了一学期的故事，我的故事在课程格子里，你呢？</string>
+    <string name="share_after_import_courses_succeed">写课表太麻烦，拍课表没提醒。用3秒登陆教务系统，2秒钟快速导入本学期课表，新学期从课程格子开始。</string>
+    <string name="share_after_copy_courses_succeed">我用课程格子一键复制了%1$s同学的课表，ta不愧为高校红领巾、当代活雷锋、中国好同学。快来课程格子，下一个好同学就是你！？</string>
+    
+    <!-- 空状态 -->
+    <string name="empty_all_events_list">一大波活动即将来袭……</string>
+    <string name="empty_my_events_list">再宅就要长蘑菇了，去参加活动见见光吧……</string>
+    <string name="empty_handmap_apply_for_btn">加把劲，我也要！</string>
+    <string name="empty_handmap_apply_for">想要的人太少，设计师mm动力不够！</string>
+    <string name="empty_handmap_apply_for_new">我们的设计师mm正在埋头绘制各个学校的手绘地图，着急要就狂点下面的按钮！</string>
+    <string name="empty_sticker_hint_2_download">弱爆了！你都木有格子贴纸啊，快去左下角的商城选择自己喜欢的贴纸吧。</string>
+    <string name="empty_my_friends_list">你和你的小伙伴们都失散了……狂点页面右上角召唤小伙伴！</string>
+    <string name="empty_search_by_gezi_id">你所拨打的格子号是空号，请查询后再拨</string>
+    <string name="empty_search_by_name">格子星球暂时木有这个人</string>
+    <string name="empty_search_by_renren">你的人人网好荒凉啊，没关系，好好经营格子阵地吧，这里鸟语花香~</string>
+    <string name="empty_search_by_sina_weibo">你的微博好荒凉啊，没关系，好好经营格子阵地吧，这里有花有草~</string>
+    <string name="empty_search_by_department">你是第一个来到格子星球的%1$s的人，赶紧邀请你的族人一起建立文明吧</string>
+    <string name="empty_search_by_follow">一定是你的头像有问题，所以没有人愿意跟你玩</string>
+    <string name="empty_messages_list">一定是你的头像有问题，所以没有人愿意跟你说话</string>
+    <string name="empty_notes_list">可以拍摄老师板书或者同学笔记作为自己的课堂笔记哦！</string>
+    <string name="empty_import_course">工程师们正在加紧奋战开发各个学校的教务导入，着急要就狂点下面的按钮！</string>
+    <string name="empty_import_course_button">抽打工程师快开发！</string>
+    
+    
+    <!-- 错误提示 -->
+    <string name="prompt_no_space_for_paster">没有空间可以张贴贴纸 啊哦~都填满了！你一定是学霸</string>
+    <string name="prompt_download_fail">童鞋，网络不给力~建议在wifi环境下重新下载</string>     <!-- 手绘地图/贴纸/插件 -->
+    <string name="prompt_different_password_when_amend">两次输入不符，请核对后重新输入</string>
+    <string name="prompt_wrong_password_when_amend">原密码错误，请核对后重新输入</string>
+    <string name="prompt_short_of_name">童鞋，名字忘记了</string>
+    <string name="prompt_connect_fail">网络好像不大给力啊</string>
+    <string name="prompt_conflict_when_set_time_pattern">童鞋，单一时空下，时间不能重叠，请将第%1$s、%2$s节时间错开</string>
+    <string name="prompt_conflict_when_set_time_pattern_single">童鞋，你设置的第%1$s节,课程时间有误。</string>
+    
+    <!-- 分享文案 -->
+    <string name="sharetext_event">%1$s，课程格子里的这个活动好像很有意思的样子，小伙伴们快来围观吧</string>
+    <string name="sharetext_handmap">课表见证大学时光，手绘地图让我看清前行的道路。#小课表，大格局#，课程格子——最贴心的大学生校园应用。</string>
+    
+    <!-- Dialog提示 -->
+    <string name="message_timemode">使用%1$s功能需要设置课程时间，我们已经帮你设置为你们学校的默认时间，在设置中可修改</string>
+</resources>

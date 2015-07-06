@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="15dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/add_new_class_icon_deletetime" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_bg_with_shadow"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/course_time_add_text"
+            android:layout_width="39dp"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:ems="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/textcolor_66"
+            android:textSize="17sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/weeks"
+                style="@style/style_horizontal_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/add_new_class_icon_week" />
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:id="@+id/weeks_textview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:hint="@string/addCourseWeekTextView"
+                    android:textColor="@color/textcolor_66"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/course_time_container"
+                style="@style/style_horizontal_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/add_new_class_icon_time" />
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:id="@+id/course_time_string"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:hint="点击添加上课时间"
+                    android:textColor="@color/textcolor_66"
+                    android:textSize="17sp" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/selected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingRight="10dp"
+                        android:textColor="#12D600"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/delete_course_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:background="@drawable/btn_delete_course_time"
+                        android:paddingBottom="0dp"
+                        android:paddingTop="0dp"
+                        android:text="删除"
+                        android:textColor="@android:color/white"
+                        android:visibility="gone" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/style_horizontal_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp" 
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/add_new_class_icon_location" />
+
+                <EditText
+                    android:id="@+id/room"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/transparent"
+                    android:hint="请输入上课地点"
+                    android:singleLine="true"
+                    android:textColor="@color/textcolor_66"
+                    android:textSize="17sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

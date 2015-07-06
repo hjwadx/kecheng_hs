@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:paddingTop="8dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:gravity="center" >
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/skinitem_image_base"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:src="@drawable/skin_img_custom" />
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/skinitem_cover"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:src="@drawable/skin_icon_selected" />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:id="@+id/skinitem_text"
+        android:text="默认"
+        android:layout_marginTop="1dp"
+        android:textSize="11sp"
+        android:textColor="@color/textcolor_4c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skinitem_image_base" />
+
+</RelativeLayout>

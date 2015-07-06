@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/chat_input"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/remain_count"
+            android:layout_alignParentLeft="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:background="@null"
+            android:gravity="top"
+            android:lineSpacingExtra="3sp"
+            android:maxLength="140"
+            android:minHeight="150sp"
+            android:textColor="#4c4c4c"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/remain_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:text="还可以输入140个字"
+            android:textColor="#787878"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottombar_back" >
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/edit_message_bottom_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:background="@drawable/bottombar_btn_face" />
+
+        <CheckBox
+            android:checked="true"
+            android:id="@+id/edit_message_bottom_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:button="@drawable/selector_checkbox_send_message"
+            android:text="匿名评论"
+            android:textColor="#787878" />
+    </RelativeLayout>
+
+    <fm.jihua.kecheng.ui.widget.EmojiGridContainer
+        android:id="@+id/emoji_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</LinearLayout>

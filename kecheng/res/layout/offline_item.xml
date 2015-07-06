@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<LinearLayout android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	android:paddingLeft="20dp"
+	android:paddingRight="10dp"
+	android:paddingTop="10dp"
+	android:paddingBottom="10dp"
+	android:background="#929291"
+    android:orientation="horizontal">
+    <LinearLayout android:layout_width="0dip"
+    	android:layout_height="fill_parent"
+    	android:orientation="vertical"
+    	android:gravity="center_vertical"
+    	android:layout_weight="1"
+    	>
+	    <TextView
+	        android:id="@+id/title"
+	        android:layout_width="wrap_content"
+	        android:singleLine="true"
+			android:ellipsize="end"
+	        android:textSize="18sp"
+	        android:textColor="@color/white"
+	        android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button android:id="@+id/upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:background="@drawable/btn_upload"
+            android:focusable="false"
+            />
+    <Button android:id="@+id/remove"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:background="@drawable/btn_delete"
+            android:focusable="false"
+            />
+    
+    </LinearLayout>
+    <View android:layout_width="wrap_content"
+          android:layout_height="1px"
+          android:background="#81807E"
+          />
+</LinearLayout>

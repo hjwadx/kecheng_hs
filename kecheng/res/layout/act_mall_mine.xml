@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kecheng="http://schemas.android.com/apk/res/fm.jihua.kecheng_hs"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="6dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="4dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/bg_shadow" >
+
+        <fm.jihua.kecheng.ui.widget.LinearSettingView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            kecheng:imageIcon="@drawable/shop_mine_sticker_icon"
+            kecheng:parentId="@+id/mallmine_paste"
+            kecheng:titleName="我的贴纸" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_shadow" >
+
+        <fm.jihua.kecheng.ui.widget.LinearSettingView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            kecheng:imageIcon="@drawable/shop_mine_skin_icon"
+            kecheng:parentId="@+id/mallmine_skin"
+            kecheng:titleName="我的皮肤" />
+    </LinearLayout>
+
+</LinearLayout>

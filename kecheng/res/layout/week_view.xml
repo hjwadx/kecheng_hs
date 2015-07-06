@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/add_course_tip"
+            android:layout_width="fill_parent"
+            android:layout_height="118dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/tip_addcourse" />
+
+        <RelativeLayout
+            android:id="@+id/main_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <fm.jihua.kecheng.ui.widget.CustomScrollView
+                android:id="@+id/weekview_parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadingEdge="none"
+                android:fillViewport="true" >
+
+                <fm.jihua.kecheng.ui.widget.WeekView
+                    android:id="@+id/weekview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </fm.jihua.kecheng.ui.widget.CustomScrollView>
+        </RelativeLayout>
+
+        <!--
+           <fm.jihua.kecheng.ui.widget.WeekScrollView
+            android:id="@+id/weekview_parent"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:fillViewport="true"
+            android:layout_weight="1"
+            android:fadingEdge="none" >
+
+           <fm.jihua.kecheng.ui.widget.WeekView
+                android:id="@+id/weekview"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                />
+            </fm.jihua.kecheng.ui.widget.WeekScrollView>
+        -->
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/menu_bar_container"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/menu_bar"
+            android:layout_width="280dp"
+            android:layout_height="140dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" >
+
+            <ImageView
+                android:id="@+id/dot_add_course"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/dot_theme"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/float_menu_btn_addcourse" />
+
+            <TextView
+                android:id="@+id/add_course"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/dot_add_course"
+                android:layout_below="@+id/dot_add_course"
+                android:gravity="bottom|center_horizontal"
+                android:text="添课"
+                android:textColor="@color/textcolor_66"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/dot_theme"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/dot_add_course"
+                android:src="@drawable/float_menu_btn_skin" />
+
+            <TextView
+                android:id="@+id/theme"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/dot_theme"
+                android:layout_below="@+id/dot_theme"
+                android:gravity="bottom|center_horizontal"
+                android:text="皮肤"
+                android:textColor="@color/textcolor_66"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/dot_paster"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_toLeftOf="@+id/dot_share_course"
+                android:src="@drawable/float_menu_btn_paster"/>
+
+            <TextView
+                android:id="@+id/paster"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/dot_paster"
+                android:layout_below="@+id/dot_paster"
+                android:gravity="bottom|center_horizontal"
+                android:text="贴纸"
+                android:textColor="@color/textcolor_66"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/dot_share_course"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/dot_paster"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/float_menu_btn_share"  />
+
+            <TextView
+                android:id="@+id/share_course"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/dot_share_course"
+                android:layout_below="@+id/dot_share_course"
+                android:gravity="bottom|center_horizontal"
+                android:text="分享"
+                android:textColor="@color/textcolor_66"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        
+        <ImageView
+            android:id="@+id/toggle_menu_bg"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="center"
+             />
+
+        <ImageView
+            android:id="@+id/toggle_menu"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/float_menu_icon"
+            android:scaleType="center"
+             />
+    </RelativeLayout>
+	
+    <fm.jihua.kecheng.ui.widget.ThemeView
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/skinview"
+        />
+</RelativeLayout>

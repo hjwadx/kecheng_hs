@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/others_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+        <RelativeLayout
+            android:id="@+id/main_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <!-- 
+            <LinearLayout 
+                android:id="@+id/weekview_corner_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/left_title_parent"
+                android:layout_toLeftOf="@+id/top_title_parent"
+                android:background="@color/weekview_corner"
+                >
+                
+            </LinearLayout> -->
+			
+            <fm.jihua.kecheng.ui.widget.CustomScrollView
+                android:id="@+id/others_weekview_parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadingEdge="none"
+                android:fillViewport="true" >
+
+                <fm.jihua.kecheng.ui.widget.WeekView
+                    android:id="@+id/others_weekview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </fm.jihua.kecheng.ui.widget.CustomScrollView>
+        </RelativeLayout>
+
+        <!-- <fm.jihua.kecheng.ui.widget.WeekScrollView
+            android:id="@+id/others_weekview_parent"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:fillViewport="true"
+            android:layout_weight="1"
+            android:fadingEdge="none" >
+            <fm.jihua.kecheng.ui.widget.WeekView
+                android:id="@+id/others_weekview"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                />
+            </fm.jihua.kecheng.ui.widget.WeekScrollView> -->
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/add"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/toolbar_shadow" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:alpha="0.9"
+            android:background="@color/white_item_selector_linearlayout_bg"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/icon_copy_schedule" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="一键复制Ta的课表"
+                android:textColor="@color/main_blue"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="(被复制过"
+                android:textColor="@color/textcolor_80"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/add_copy_times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16"
+                android:textColor="@color/textcolor_80"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="次)"
+                android:textColor="@color/textcolor_80"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

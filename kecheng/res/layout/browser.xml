@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/fm.jihua.kecheng_hs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <WebView 
+        android:layout_height="0dp" 
+        android:layout_width="match_parent" 
+        android:layout_weight="1"
+        android:id="@+id/webview"/>
+    <LinearLayout
+        android:id="@+id/profile_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/course_toolbar_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/go_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp" 
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/btn_back_pressed"/>
+        <Button
+            android:id="@+id/go_forward"
+            android:layout_width="20dp"
+            android:layout_height="20dp" 
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/btn_forward_pressed"/>
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="15dp" 
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/refresh"
+            android:layout_width="20dp"
+            android:layout_height="20dp" 
+            android:layout_marginRight="20dp"
+            android:background="@drawable/web_refresh_btn"/>
+
+        <!-- <fm.jihua.kecheng.ui.view.GifMovieView
+            android:id="@+id/loading"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            custom:gif="@drawable/loading_gif"
+            android:layout_marginRight="20dp"
+            android:visibility="gone"/> -->
+        <ProgressBar
+            android:id="@+id/loading"
+            style="?android:attr/progressBarStyleSmallTitle"
+            android:indeterminateDrawable="@drawable/progressbar"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginRight="18dp"/>
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kecheng="http://schemas.android.com/apk/res/fm.jihua.kecheng_hs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:visibility="gone"
+            android:gravity="center_horizontal"
+            android:id="@+id/time_mode_titlehint"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:text="对第一节课的设置，可以批量修改所有的课程" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/timemode_linearsettingview_layout"
+            android:layout_below="@+id/time_mode_titlehint"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ListView
+                android:id="@+id/time_mode_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_bg_with_shadow" >
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/timemode_linearsettingview_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <fm.jihua.kecheng.ui.widget.LinearSettingView
+                android:id="@+id/timemode_linearsettingview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                kecheng:backgroundType="single"
+                kecheng:contentId="@+id/timemode_slotlength_content"
+                kecheng:parentId="@+id/timemode_slotlength_parent"
+                kecheng:titleName="每日课程数量" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

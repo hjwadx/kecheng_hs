@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/root"    
+    android:background="@color/app_background"
+    android:padding="8dp"  >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_shadow"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/home_menu_core_item_height"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="生日"
+                android:textColor="@color/textcolor_4c"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/birthday"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/textcolor_80"
+                android:textSize="15sp" >
+            </EditText>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_bg" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/home_menu_core_item_height"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="星座"
+                android:textColor="@color/textcolor_4c"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/constellation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/textcolor_80"
+                android:textSize="15sp" >
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="10dp" 
+        android:layout_marginTop="4dp"
+        android:background="@drawable/white_bg_with_shadow"
+        android:minHeight="48dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:text="仅显示星座"
+            android:textColor="@color/textcolor_4c"
+            android:textSize="15sp"
+            android:textStyle="bold"  />
+
+        <ToggleButton
+            android:id="@+id/toggle_showageonly"
+            android:layout_width="80dp"
+            android:layout_height="28dp"
+            android:background="@drawable/switch_button"
+            android:textOff=""
+            android:textOn="" />
+    </LinearLayout>
+
+   <!--  <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_middle"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="年龄"
+            android:textColor="@color/profiletitle"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:cursorVisible="false"
+            android:drawableRight="@drawable/list_tappable"
+            android:focusable="false"
+            android:focusableInTouchMode="false">
+        </EditText>
+    </LinearLayout> -->
+
+    
+    
+    <include layout="@layout/date_picker" />
+    
+
+</LinearLayout>

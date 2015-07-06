@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:switch="http://schemas.android.com/apk/res/fm.jihua.kecheng_hs"
+    xmlns:kecheng="http://schemas.android.com/apk/res/fm.jihua.kecheng_hs"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_shadow"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/gezi_id_parent"
+                style="@style/style_horizontal_layout_with_click_effect"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="格子号"
+                    android:textColor="@color/textcolor_4c"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/gezi_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    android:textColor="@color/textcolor_80"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_bg" />
+
+            <fm.jihua.kecheng.ui.widget.LinearSettingView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                kecheng:contentId="@+id/email"
+                kecheng:parentId="@+id/email_parent"
+                kecheng:titleName="邮箱" />
+
+            <!--
+            <LinearLayout
+                android:id="@+id/t_weibo"
+                android:gravity="center_vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/friends_import_icon_tecent" 
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp"
+                    android:text="从腾讯微博添加"
+                    android:textColor="@color/profiletitle"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:drawableRight="@drawable/list_tappable"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    android:textColor="@color/profiletitle"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_shadow"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/password_parent"
+                style="@style/style_horizontal_layout_with_click_effect"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设置密码"
+                    android:textColor="@color/textcolor_4c"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/myprofile_list_icon_arrow"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    android:textColor="@color/textcolor_80"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="3dp"
+            android:text="设置密码后，可以通过邮箱或格子号找回账号，以及同步到其他手机。"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/textcolor_66" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,50 @@
+{
+    "name": "默认皮肤",
+    "iconImage": "img_skin_default",
+    "dayIndicatorConfig": {
+        "oddColor": "235,234,231",
+        "evenColor": "235,234,231",
+        "seperatorLineColor": "214,213,208",
+        "textColor": "153,153,153",
+        "currentWeekdayColor": "0,0,0",
+        "currentWeekdayTextColor": "255,255,255",
+        "hasSeperatorLine":"1"
+    },
+    "courseIndicatorConfig": {
+        "oddColor": "235,234,231",
+        "evenColor": "235,234,231",
+        "seperatorLineColor": "214,213,208",
+        "textColor": "153,153,153",
+        "hasSeperatorLine":"1"
+    },
+    "gridViewConfig": {
+        "separatorTagShape": "cross",
+        "separatorTagColor": "214,213,208",
+        "cross": {
+            "crossLineLength": 12,
+            "crossLineWidth": 2
+        }
+    },
+    "gridBackgroundConfig": {
+        "backgroundImage": "backgroundImageName",
+        "backgroundColor": "245,244,241",
+        "backgroundType": "color"
+    },
+    "timeGridConfig": {
+        "gridColors": [
+            "250,120,134",
+            "52,206,217",
+            "56,211,169",
+            "175,146,215",
+            "252,220,54",
+            "100,186,255",
+            "255,169,65",
+            "168,210,65",
+            "248,149,215"
+        ],
+        "textColor": "255,255,255,100"
+    },
+    "leftTopCornerConfig": {
+        "color": "214,213,208"
+    }
+}

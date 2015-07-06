@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/main_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_background"
+        android:layout_weight="1"
+        android:fadingEdge="none" >       
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:orientation="vertical">
+                
+            <RelativeLayout 
+                android:id="@+id/course_bg_1"
+                android:background="@color/app_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+				
+                <LinearLayout
+                    android:id="@+id/course_parent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/course_detail_bg"
+                    android:orientation="vertical"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="38dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="4dp">
+                        
+                        <ImageView
+                            android:id="@+id/course_image"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="9dp"
+                            android:src="@drawable/course_detail_icon_course" />
+
+                        <TextView
+                            android:id="@+id/detailHeader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="课程详情"
+                            android:layout_marginTop="8dp"
+                            android:layout_toRightOf="@id/course_image"
+                            android:textColor="@color/course_detail_title"
+                            android:shadowColor="#FFFFFF"
+                            android:shadowDy="1"
+                            android:shadowRadius="1"
+                            android:textSize="16sp" />
+
+                        <Button
+                            android:id="@+id/edit_course"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="编辑" 
+                            android:background="@drawable/course_edit_btn"
+                            android:layout_alignParentRight="true"
+                            android:shadowColor="#e09a20"
+                            android:shadowDy="1"
+                            android:paddingBottom="2dp"
+                            android:shadowRadius="1"
+                            android:textSize="14sp"
+                            android:textColor="@color/white"/>
+                    </RelativeLayout>
+                    
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="5dp"
+                        android:background="@drawable/course_detail_title_line"/>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp" 
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="12dp"
+                            android:drawableLeft="@drawable/course_detail_icon_course_name"
+                            android:drawablePadding="6dp"
+                            android:text="名称"
+                            android:textColor="@color/tag_text_unselected"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/course_detail_content"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" 
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="12dp"
+                            android:drawableLeft="@drawable/course_detail_icon_course_teacher"
+                            android:drawablePadding="6dp"
+                            android:text="教师"
+                            android:textColor="@color/tag_text_unselected"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/teacher"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/course_detail_content"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp" 
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="12dp"
+                            android:drawableLeft="@drawable/course_detail_icon_course_info"
+                            android:drawablePadding="6dp"
+                            android:text="信息"
+                            android:textColor="@color/tag_text_unselected"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/course_times"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/course_detail_content"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp" 
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="12dp"
+                            android:drawableLeft="@drawable/course_detail_icon_exam_time"
+                            android:drawablePadding="6dp"
+                            android:text="时间"
+                            android:textColor="@color/tag_text_unselected"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/times"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/course_detail_content"
+                            android:textSize="15sp" />
+                    </LinearLayout>                    
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" 
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/students_count_parent">
+                        
+                        <TextView
+                            android:id="@+id/students_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:drawableLeft="@drawable/course_detail_icon_course_students"
+                            android:drawablePadding="5dp"
+                            android:text="同学"
+                            android:textColor="@color/tag_text_unselected"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/course_detail_students_bg"
+                    android:orientation="horizontal" 
+                    android:layout_marginTop="-20dp"
+                    android:gravity="center_vertical"
+                    android:layout_below="@id/course_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp">
+
+                    <fm.jihua.kecheng.ui.widget.HorizontialListView
+                        android:id="@+id/gridStudents"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/studentsImage"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/course_detail_arrow" />
+                </LinearLayout>
+
+            </RelativeLayout>
+                        
+            <LinearLayout
+                android:id="@+id/examination_parent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/course_detail_bg"
+                android:orientation="vertical" >
+                
+                <include 
+                    layout="@layout/course_examination"/>
+                
+            </LinearLayout>
+            
+            
+            <LinearLayout
+                android:id="@+id/rate_parent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/course_detail_bg"
+                android:orientation="vertical">
+                
+                <include 
+                    layout="@layout/course_rate"   />             
+            </LinearLayout>
+            
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/course_detail_whole_bg"
+                android:orientation="vertical">
+                
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" 
+                    android:minHeight="38dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginTop="4dp">
+                    
+                    <TextView
+                        android:id="@+id/notesHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/course_detail_icon_note"
+                        android:drawablePadding="6dp"
+                        android:layout_marginTop="8dp"
+                        android:text="课程笔记"
+                        android:shadowColor="#FFFFFF"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/course_detail_title"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/add_note"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/course_edit_btn"
+                        android:shadowColor="#e09a20"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:text="添加"
+                        android:paddingBottom="2dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                
+                </RelativeLayout>
+                
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dp"
+                    android:background="@drawable/course_detail_title_line" 
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"/>
+
+                <ListView
+                    android:id="@+id/listNotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="#00000000"
+                    android:dividerHeight="0dp"
+                    android:fadingEdge="none"
+                    android:listSelector="@android:color/transparent" >
+                </ListView>
+                
+                <TextView
+                    android:id="@+id/notes_empty_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="予人笔记，手有余香"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#AAAAAA"
+            		android:textSize="15sp"
+                    android:visibility="invisible"
+                    />
+                
+            </LinearLayout>
+            
+            <Button
+                android:id="@+id/delete_course"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/detail_btn_deletecourse"/>        
+                
+        </LinearLayout>
+        
+    </ScrollView>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="12dp"
+        android:gravity="top"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/course_detail_icon_exam"
+            android:drawablePadding="6dp"
+            android:shadowColor="#FFFFFF"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="考试安排"
+            android:textColor="@color/course_detail_title"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/course_detail_title_line" />
+
+    <LinearLayout
+        android:id="@+id/examination"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="top"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/date_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:drawableLeft="@drawable/course_detail_icon_exam_date"
+                    android:drawablePadding="6dp"
+                    android:text="日期"
+                    android:textColor="@color/tag_text_unselected"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="@color/course_detail_content"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/time_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/date_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:drawableLeft="@drawable/course_detail_icon_exam_time"
+                    android:drawablePadding="6dp"
+                    android:text="时间"
+                    android:textColor="@color/tag_text_unselected"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/course_detail_content"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/room_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/time_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:drawableLeft="@drawable/course_detail_icon_exam_location"
+                    android:drawablePadding="6dp"
+                    android:text="地点"
+                    android:textColor="@color/tag_text_unselected"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/room"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/course_detail_content"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="14dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="还剩"
+                android:textColor="#4c4c4c"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/remain_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="天"
+                android:textColor="#4c4c4c"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/remain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="-10dp"
+                android:layout_marginRight="2dp"
+                android:layout_toLeftOf="@id/remain_label"
+                android:gravity="bottom"
+                android:singleLine="true"
+                android:textColor="#FFA200"
+                android:textSize="40sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+ </merge>

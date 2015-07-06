@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Used in app/menu examples -->
+    <string-array name="week_days">
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+        <item>周日</item>  
+    </string-array>
+    <string-array name="occurances">
+        <item>每周</item>
+        <item>单周</item>
+        <item>双周</item>
+    </string-array>
+    <string-array name="occurances_name">
+        <item>周</item>
+    </string-array>
+    <string-array name="notification_time">
+        <item>前一天晚上8点</item>
+        <item>前一天晚上10点</item>
+        <item>当天早上7点</item>
+        <item>当天早上8点</item>
+        <item>当天早上9点</item>
+        <item>当天早上10点</item>
+    </string-array>
+    <string-array name="notification_time_values">
+        <item>-4</item>
+        <item>-2</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="time_slot_length">
+        <item>8节</item>
+        <item>9节</item>
+        <item>10节</item>
+        <item>11节</item>
+        <item>12节</item>
+        <item>13节</item>
+        <item>14节</item>
+        <item>15节</item>
+        <item>16节</item>
+    </string-array>
+    <string-array name="time_slot_length_value">
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+    </string-array>
+    <string-array name="time_mode_class_before">
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="time_mode_mute_category">
+        <item>无声</item>
+        <item>震动</item>
+    </string-array>
+    <string-array name="select_sex">
+        <item>女</item>
+        <item>男</item>
+    </string-array>
+    <string-array name="select_love_status">
+        <item>单身</item>
+        <item>恋爱中</item>
+        <item>不公开</item>
+    </string-array>
+</resources>

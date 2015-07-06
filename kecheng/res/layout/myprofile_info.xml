@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kecheng="http://schemas.android.com/apk/res/fm.jihua.kecheng_hs"
+    android:id="@+id/school_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="8dp"
+    android:paddingLeft="8dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="6dp"   >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_shadow"
+        android:orientation="vertical" >
+
+        <fm.jihua.kecheng.ui.widget.LinearSettingView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            kecheng:contentHint="请选择城市"
+            kecheng:contentId="@+id/city"
+            kecheng:parentId="@+id/city_parent"
+            kecheng:titleName="城市" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_bg" />
+
+        <fm.jihua.kecheng.ui.widget.LinearSettingView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            kecheng:contentHint="请选择学校"
+            kecheng:contentId="@+id/school"
+            kecheng:parentId="@+id/school_parent"
+            kecheng:titleName="学校" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_bg" />
+
+        <fm.jihua.kecheng.ui.widget.LinearSettingView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            kecheng:contentHint="请选择班级"
+            kecheng:contentId="@+id/classes"
+            kecheng:parentId="@+id/classes_parent"
+            kecheng:titleName="班级" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_shadow"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <fm.jihua.kecheng.ui.widget.LinearSettingView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            kecheng:contentHint="请选择学历"
+            kecheng:contentId="@+id/educational_status"
+            kecheng:parentId="@+id/educational_parent"
+            kecheng:titleName="在读" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_bg" />
+
+        <fm.jihua.kecheng.ui.widget.LinearSettingView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            kecheng:contentHint="请选择目标行业"
+            kecheng:contentId="@+id/field"
+            kecheng:parentId="@+id/field_parent"
+            kecheng:titleName="目标行业" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_bg" />
+
+        <fm.jihua.kecheng.ui.widget.LinearSettingView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            kecheng:contentHint="请选择目前状态"
+            kecheng:contentId="@+id/status"
+            kecheng:layoutType="vertical"
+            kecheng:parentId="@+id/status_parent"
+            kecheng:titleName="目前状态" />
+    </LinearLayout>
+    
+    
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_shadow"
+        android:orientation="vertical" >
+
+    <fm.jihua.kecheng.ui.widget.LinearSettingView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        kecheng:contentHint="请选择生日"
+        kecheng:contentId="@+id/birthday"
+        kecheng:parentId="@+id/birthday_parent"
+        kecheng:titleId="@+id/birthday_title"
+        kecheng:titleName="生日" />
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_bg" />
+
+    <fm.jihua.kecheng.ui.widget.LinearSettingView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        kecheng:contentHint="请选择恋爱状态"
+        kecheng:contentId="@+id/love_status"
+        kecheng:parentId="@+id/love_parent"
+        kecheng:titleName="恋爱状态" />
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_bg" />
+    
+    <fm.jihua.kecheng.ui.widget.LinearSettingView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        kecheng:contentHint="未填写"
+        kecheng:contentId="@+id/dormitory"
+        kecheng:parentId="@+id/dormitory_parent"
+        kecheng:titleName="宿舍" />
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_bg" />
+
+    <fm.jihua.kecheng.ui.widget.LinearSettingView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        kecheng:contentHint="请写个性签名"
+        kecheng:contentId="@+id/autograph"
+        kecheng:layoutType="vertical"
+        kecheng:parentId="@+id/autograph_parent"
+        kecheng:titleName="个性签名" />
+    
+    </LinearLayout>
+
+</LinearLayout>

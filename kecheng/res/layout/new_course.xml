@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/new_course_main"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical" >
+
+    <fm.jihua.kecheng.ui.widget.SimpleScrollView
+        android:id="@+id/add_course_form_container"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/add_course_form"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp" >
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/white_bg_with_shadow" >
+
+                <LinearLayout
+                    style="@style/style_horizontal_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/add_new_class_icon_classname" />
+
+                    <EditText
+                        android:id="@+id/course_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="请输入课程名称"
+                        android:textColor="@color/textcolor_4c"
+                        android:singleLine="true" >
+
+                        <!-- <requestFocus /> -->
+                    </EditText>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/divider_bg" />
+
+                <LinearLayout
+                    style="@style/style_horizontal_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/add_new_class_icon_teachername" />
+
+                    <EditText
+                        android:id="@+id/teacher"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="请输入授课教师姓名"
+                        android:textColor="@color/textcolor_4c"
+                        android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <fm.jihua.kecheng.ui.view.EditCourseTimeTable
+                android:id="@+id/course_time_parent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </fm.jihua.kecheng.ui.widget.SimpleScrollView>
+
+    <fm.jihua.kecheng.ui.view.CourseTimeWheelView
+        android:id="@+id/wheel_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

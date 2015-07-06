@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/search_container"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:background="@color/gray_light"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:layout_marginRight="10dp"
+            android:id="@+id/search_field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/search_bar_bg"
+            android:drawableLeft="@drawable/search_icon"
+            android:drawablePadding="5dp"
+            android:hint="请输入姓名查找"
+            android:imeOptions="actionSend|flagNoExtractUi"
+            android:inputType="textShortMessage|textAutoCorrect|textCapSentences"
+            android:paddingLeft="13dp"
+            android:singleLine="true" />
+        
+        <Button
+            android:id="@+id/search"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:background="@drawable/button_blue"
+            android:focusable="false"
+            android:text="查找"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+    <fm.jihua.kecheng.ui.view.AddFriendsListView
+        android:id="@+id/user_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:dividerHeight="0px"
+        android:fadingEdge="none" />
+     <fm.jihua.kecheng.ui.view.BiasHintView
+        android:id="@+id/empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+</LinearLayout>

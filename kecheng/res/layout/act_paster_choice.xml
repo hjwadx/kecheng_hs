@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_f5f4f1"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/shadow"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="-4dp" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/paster_viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <FrameLayout
+            android:id="@+id/hintlayout"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:layout_width="170dp"
+            android:layout_height="201dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="22dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/bias_hintview_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/handmap_alert_bg" />
+
+            <fm.jihua.kecheng.ui.view.BiasTextView
+                android:id="@+id/bias_hintview_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="80dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp"
+                android:text="@string/empty_sticker_hint_2_download"
+                android:textColor="@color/textcolor_80"
+                android:textSize="15sp" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_paster_horizontalscrollview"
+        android:scaleType="fitXY"
+        android:src="@drawable/toolbar_shadow" />
+
+    <include
+        android:id="@+id/layout_paster_horizontalscrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/layout_paster_bottom_item" />
+
+</RelativeLayout>

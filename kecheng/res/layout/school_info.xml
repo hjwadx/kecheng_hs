@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/school_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/home_menu_core_item_height"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="城市"
+            android:textColor="@color/textcolor_4c"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:cursorVisible="false"
+            android:drawableRight="@drawable/myprofile_list_icon_arrow"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="请选择城市"
+            android:textColor="@color/textcolor_b2"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_bg" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/home_menu_core_item_height"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="学校"
+            android:textColor="@color/textcolor_4c"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/school"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:cursorVisible="false"
+            android:drawableRight="@drawable/myprofile_list_icon_arrow"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textColor="@color/textcolor_b2"
+            android:textSize="15sp"
+            android:hint="请选择学校" />
+    </LinearLayout>
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_bg" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/home_menu_core_item_height"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" 
+        android:paddingLeft="12dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="班级"
+            android:textColor="@color/textcolor_4c"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/classes"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:cursorVisible="false"
+            android:drawableRight="@drawable/myprofile_list_icon_arrow"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textColor="@color/textcolor_b2"
+            android:textSize="15sp"
+            android:hint="请选择班级" />
+    </LinearLayout>
+
+</LinearLayout>

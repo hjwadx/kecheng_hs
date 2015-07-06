@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/message"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_background"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp" >
+
+    <LinearLayout
+        android:id="@+id/msg_fetch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="0dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp" >
+
+        <Button
+            android:id="@+id/btn_fetch_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@+string/more_message"
+            android:visibility="gone" >
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/msg_mssage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingBottom="0dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:shrinkColumns="1" >
+
+        <RelativeLayout
+            android:id="@+id/time_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp" >
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/shape_chattext_back"
+                android:singleLine="true"
+                android:textColor="@color/chat_time"
+                android:textSize="11sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="45dp"
+            android:orientation="horizontal" 
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/special_message_bg">
+            
+            <fm.jihua.kecheng.ui.widget.CachedImageView
+                android:id="@+id/avatar2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="0"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="8dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="top"
+                    android:textColor="@color/gray_darker"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="top"
+                    android:textColor="@color/course_detail_content"
+                    android:textSize="15sp"/>
+                
+            </LinearLayout>
+            
+            <ImageView
+                android:id="@+id/studentsImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/course_detail_arrow" />
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

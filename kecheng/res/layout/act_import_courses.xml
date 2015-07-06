@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/app_background"
+    android:id="@+id/root">
+    
+    <LinearLayout
+        android:id="@+id/top_hint_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/myprofile_cover_icon_tip" />
+
+        <TextView
+            android:id="@+id/top_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:text="下面是你的同班同学，你可以一键复制他们的课程表"
+            android:textColor="@color/textcolor_66"
+            android:textSize="10sp" />
+    </LinearLayout>
+    
+    <ListView
+        android:id="@+id/user_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="8dp"
+        android:cacheColorHint="#00000000"
+        android:listSelector="@android:color/transparent"
+        android:background="@color/app_background"
+        android:dividerHeight="0px"
+        android:fadingEdge="none" >
+    </ListView>
+    
+     <fm.jihua.kecheng.ui.view.BiasHintView
+        android:id="@+id/empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"/>
+</LinearLayout>

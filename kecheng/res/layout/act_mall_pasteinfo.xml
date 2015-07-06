@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kecheng="http://schemas.android.com/apk/res/fm.jihua.kecheng_hs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <fm.jihua.kecheng.ui.widget.CachedImageView
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/banner"
+                android:background="@color/black_alpha_50"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="坨坨"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:text="免费"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/access"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dp"
+                    android:padding="3dp"
+                    android:background="@drawable/button_blue"
+                    android:text="  获取方式  "
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:onClick="onClick"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/sticker_presentation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name"
+                    android:layout_marginTop="10dp"
+                    android:text="贴纸介绍.................贴纸介绍................贴纸介绍...............贴纸介绍..................贴纸介绍...................."
+                    android:textColor="@color/white_alpha_75"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <fm.jihua.kecheng.ui.widget.ShadowTextView
+            android:id="@+id/download"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            kecheng:drawableHeight="@dimen/home_menu_item_icon_size"
+            kecheng:drawableWidth="@dimen/home_menu_item_icon_size"
+            kecheng:text="下载" />
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="13dp"
+            android:paddingTop="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="22dp"
+            android:background="@drawable/white_bg_with_shadow"
+            android:orientation="horizontal" >
+
+            <fm.jihua.kecheng.ui.widget.CachedImageView
+                android:id="@+id/preview"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="76dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/white_bg_with_shadow" >
+
+            <fm.jihua.kecheng.ui.widget.CachedImageView
+                android:id="@+id/avatar"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitCenter"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textcolor_4c"
+                    android:textSize="16sp"
+                    android:text="课程格子" />
+
+                <TextView
+                    android:id="@+id/author_presentation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/textcolor_b2"
+                    android:textSize="14sp"
+                    android:text="我们是有爱的课程格子小分队，介绍介绍介绍介绍不能超过30个字" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="8dp"
+            android:drawableLeft="@drawable/myprofile_cover_icon_tip"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="贴纸未特殊标注时，为课表和聊天通用，部分标注贴纸仅课表使用，GIF贴纸仅聊天使用。"
+            android:textColor="@color/textcolor_66"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="176dp"
+	android:background="@drawable/keyboard_bg_repeat" >
+
+    <fm.jihua.kecheng.ui.widget.ScrollLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp" />
+
+    <LinearLayout
+        android:layout_marginTop="160dp"
+        android:id="@+id/scrollContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:tag="scroller" >
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kecheng="http://schemas.android.com/apk/res/fm.jihua.kecheng_hs"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/hint_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="4dp"
+        android:drawableLeft="@drawable/myprofile_cover_icon_tip"
+        android:drawablePadding="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="拖拽贴纸排序可更改贴纸键盘中显示顺序"
+        android:textColor="@color/textcolor_66"
+        android:textSize="10sp" />
+
+    <com.mobeta.android.dslv.DragSortListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:choiceMode="multipleChoice"
+        android:divider="@color/divider_bg"
+        android:dividerHeight="1px"
+        android:listSelector="@android:color/transparent"
+        kecheng:click_remove_id="@id/click_remove"
+        kecheng:collapsed_height="1px"
+        kecheng:drag_enabled="true"
+        kecheng:drag_handle_id="@id/drag_handle"
+        kecheng:drag_scroll_start="0.33"
+        kecheng:drag_start_mode="onDown"
+        kecheng:float_alpha="0.6"
+        kecheng:remove_enabled="true"
+        kecheng:remove_mode="clickRemove"
+        kecheng:slide_shuffle_speed="0.3" />
+    
+    <TextView
+        android:id="@+id/empty_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="你还没有贴纸，快去商城下载吧"
+        android:textColor="@color/textcolor_66"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+</LinearLayout>

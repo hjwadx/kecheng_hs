@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/selector_white_bg"
+        android:gravity="center_vertical"
+        android:minHeight="70dp"
+        android:orientation="horizontal" >
+        
+        <fm.jihua.kecheng.ui.widget.CachedImageView
+            android:id="@+id/avatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="12dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="哈哈哈"
+                android:singleLine="true"
+                android:textColor="@color/gray_darker"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/other_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="10dp"
+                android:textColor="@color/gray_dark"
+                android:textSize="13sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!--
+             <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0"
+            android:src="@drawable/list_tappable" />
+        -->
+
+        <Button
+            android:id="@+id/add_friend"
+            android:layout_width="@dimen/item_btn_width"
+            android:layout_height="@dimen/item_btn_height"
+            android:background="@drawable/button_blue_with_padding"
+            android:focusable="false"
+            android:text="添加"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/remove_friend"
+            android:layout_width="@dimen/item_btn_width"
+            android:layout_height="@dimen/item_btn_height"
+            android:background="@drawable/button_red_with_padding"
+            android:focusable="false"
+            android:text="删除"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/invite_friend"
+            android:layout_width="@dimen/item_btn_width"
+            android:layout_height="@dimen/item_btn_height"
+            android:background="@drawable/button_purple_with_padding"
+            android:focusable="false"
+            android:text="邀请"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

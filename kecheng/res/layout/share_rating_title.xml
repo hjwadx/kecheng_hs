@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/leaderboard_share_title"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:shadowColor="#30566D"
+        android:shadowDy="1"
+        android:shadowRadius="1" 
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:paddingLeft="64dp"
+        android:paddingRight="64dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="3dp"
+        />
+    
+    <TextView
+        android:id="@+id/school"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:shadowColor="#2a404e"
+        android:shadowDy="1"
+        android:shadowRadius="1" 
+        android:singleLine="true"
+        android:ellipsize="end"
+        />
+
+</LinearLayout>

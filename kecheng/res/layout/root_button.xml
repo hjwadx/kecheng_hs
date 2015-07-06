@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kecheng="http://schemas.android.com/apk/res/fm.jihua.kecheng_hs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <fm.jihua.kecheng.ui.widget.ShadowTextView
+        android:id="@+id/btn_returnback"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        kecheng:drawableHeight="@dimen/home_menu_item_icon_size"
+        kecheng:drawableWidth="@dimen/home_menu_item_icon_size"
+        kecheng:shadowParentId="@+id/btn_applyfor_child"
+        kecheng:text="@string/mall_mine_returnall_paste" />
+
+</LinearLayout>

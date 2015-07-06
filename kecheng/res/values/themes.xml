@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="XTheme" parent="Theme.Sherlock.Light.DarkActionBar">
+        <item name="android:windowTitleStyle">@style/XWindowTitle</item>
+        <!-- <item name="android:windowBackground">@null</item>
+        <item name="android:windowContentOverlay">@null</item> -->
+        <item name="android:windowContentOverlay">@drawable/menubar_shadow</item>
+        <item name="android:actionBarSize">@dimen/abs__action_bar_default_height</item> 
+        <item name="android:buttonStyle">@style/Widget.Holo.Button.NoMin</item>
+    </style>
+    
+    <style name="XTheme.Slide">
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>  
+    </style>
+    
+    <style name="SplashTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen" >
+        <item name="android:windowBackground">@drawable/splashscreen</item>
+        <!-- <item name="android:windowBackground">@android:color/black</item> -->
+        <item name="android:windowContentOverlay">@android:color/transparent</item>
+    </style>
+    
+    <style name="XTheme.Transparent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    
+    <style name="XTheme.Transparent.Popup">
+        <item name="android:windowAnimationStyle">@style/PopupActivity</item>
+    </style>
+    
+    <style name="Theme.Sherlock.Light.NoActionBar.FullScreen" parent="Theme.Sherlock.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    
+    <style name="Theme.Sherlock.Light.NoActionBar.FullScreen.Transparent">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@android:color/transparent</item>
+    </style>
+    
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+		<item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+	</style>
+	
+    <style name="PopupActivity" parent="@android:style/Animation.Activity">
+		<item name="android:activityOpenEnterAnimation">@anim/slide_bottom_in</item><!-- 当前activity打开时，进入的activity的动画 -->
+		<item name="android:activityOpenExitAnimation">@null</item><!-- 当前activity打开时，退出的activity的动画 -->
+		<item name="android:activityCloseEnterAnimation">@null</item><!-- 当前activity关闭时，进入的activity的动画 -->
+		<item name="android:activityCloseExitAnimation">@anim/slide_bottom_out</item><!-- 当前activity关闭时，退出的activity的动画 -->
+	</style>
+
+    <style name="TransparentExpandableListView" parent="@android:style/Widget.ExpandableListView">
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+    </style>
+    
+    <style name="Widget.Holo.Button.NoMin" parent="@android:style/Widget.Button">
+    </style>
+</resources>

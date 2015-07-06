@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    android:background="@color/app_background"
+    android:orientation="vertical" >
+
+	 <RelativeLayout
+	     android:layout_width="fill_parent"
+	     android:layout_height="wrap_content"
+	     android:layout_margin="10dp"
+	     android:background="@drawable/invitation_bg"
+	     >
+
+	     <EditText
+	         android:id="@+id/invite_message"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:textSize="14sp"
+	         android:gravity="top"
+	         android:textColor="#AAAAAA"
+             android:lineSpacingExtra="3sp"
+	         android:background="@null"
+	         android:padding="10dp"
+	         android:maxLength="140"
+	         android:minHeight="140dp"
+	         android:text="#课程格子#多课时、单双周，迄今为止最周到的中学生移动课程表。还有更贴心的社交功能帮你认识新同学！我正在使用课程格子，强烈推荐大家也来试试！http://t.cn/zRJEpPW " 
+	         />
+
+	     <TextView
+	         android:id="@+id/remain_count"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_below="@id/invite_message"
+	         android:layout_alignParentRight="true"
+	         android:padding="8dp"
+	         android:textColor="#787878"
+	         android:layout_marginRight = "10dp"
+	         />
+
+	 </RelativeLayout>
+
+</LinearLayout>

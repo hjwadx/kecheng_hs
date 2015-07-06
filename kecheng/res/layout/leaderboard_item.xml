@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+    <fm.jihua.kecheng.ui.widget.CachedImageView
+        android:id="@+id/leaderborader_image"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_centerVertical="true"
+        />
+    
+    <TextView
+        android:id="@+id/list_tappable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/list_tappable"
+        android:gravity="right|center_vertical"
+        android:text=""
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/profiletitle"/>
+
+    <TextView
+        android:id="@+id/highlight"
+        android:layout_weight="0"
+        android:layout_toLeftOf="@id/list_tappable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/avatar_push"
+        android:gravity="right|center_vertical"
+        android:textColor="@android:color/white"
+        android:paddingLeft="8dp"
+		android:paddingRight="8dp"
+		android:paddingBottom="6dp"
+        android:text="new"
+        android:textSize="12sp"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        />
+
+    
+    
+    <TextView
+        android:id="@+id/leaderboard_name"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:padding="5sp"
+        android:textColor="@color/profiletitle"
+        android:layout_toRightOf="@id/leaderborader_image"
+        android:layout_toLeftOf="@id/highlight"
+        android:textSize="16sp"
+        android:layout_centerVertical="true"
+        android:textStyle="bold" />
+    
+    
+
+</RelativeLayout>

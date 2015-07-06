@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kecheng="http://schemas.android.com/apk/res/fm.jihua.kecheng_hs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_back"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/home_menu_left_padding_without_shadow"
+        android:paddingRight="@dimen/home_menu_right_padding_without_shadow"
+        android:paddingTop="44dp" >
+
+        <fm.jihua.kecheng.ui.widget.FillParentListView
+            android:id="@+id/main_list"
+            style="@style/ListView"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_shadow"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="@color/divider_bg"
+            android:dividerHeight="2px" />
+
+        <fm.jihua.kecheng.ui.widget.FillParentListView
+            android:id="@+id/secondary_list"
+            style="@style/ListView"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_shadow"
+            android:divider="@color/divider_bg"
+            android:dividerHeight="2px" />
+
+        <fm.jihua.kecheng.ui.widget.PluginMenuView
+            android:id="@+id/plugin_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            style="@style/Wrapper"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_shadow" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:id="@+id/baoman"
+                android:src="@drawable/baoman_banner" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
